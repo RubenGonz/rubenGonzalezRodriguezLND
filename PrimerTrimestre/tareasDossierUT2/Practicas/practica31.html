@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='author' content='Ruben Gonzalez Rodriguez'>
+    <title>Mi trigesima primera tarea en html</title>
+</head>
+
+<!-- PRÁCTICA 31.- Agrega la tercera lista al formulario anterior con información
+de las sucursales, así como un textarea para recoger los comentarios:
+Además de las visibles las sucursales en La Gomera están en Vallehermoso y San
+Sebastián. En la Palma las tenemos en Mazo, El Paso y en Garafía. -->
+
+<body>
+    <h3>Intereses:</H3>
+
+    <form name="FormularioIES" action="https://blog.iespuertodelacruz.es/alumnado/" method="post">
+
+        <label for="ColorFondoFav">COLOR DE FONDO FAVORITO:</label>
+        <select name="ColorFondoFav">
+            <option value="#000000">Negro</option>
+            <option value="#008F39">Verde</option>
+            <option value="#FF0000" selected>Rojo</option>
+            <option value="#0000FF">Azul</option>
+            <option value="#FFFFFF">Blanco</option>
+        </select>
+
+        <hr>
+
+        <label for="Intereses">INTERESES:</label>
+        <select name="Intereses" size="4" multiple>
+            <option value="Mascotas">Mascotas</option>
+            <option value="Informatica">Informatica</option>
+            <option value="Literatura">Literatura</option>
+            <option value="Salud">Salud</option>
+            <option value="Cotilleos">Cotilleos</option>
+            <option value="Noticias">Noticias</option>
+        </select>
+
+        <label for="Sucursales">SUCURSALES:</label>
+        <select name="Sucursales" size="8">
+            <optgroup label="Tenerife">
+                <option value="La Laguna">Mascotas</option>
+                <option value="Puerto de la Cruz">Puerto de la Cruz</option>
+                <option value="Arona">Arona</option>
+                <option disabled></option>
+            </optgroup>
+
+            <optgroup label="El Hierro">
+                <option value="Valverde">Valverde</option>
+                <option value="La Restinga">La Restinga</option>
+                <option disabled></option>
+            </optgroup>
+
+            <optgroup label="La Gomera">
+                <option value="Vallehermoso">Vallehermoso</option>
+                <option value="San Sebastián">San Sebastián</option>
+                <option disabled></option>
+            </optgroup>
+
+            <optgroup label="La Palma">
+                <option value="Mazo">Mazo</option>
+                <option value="El Paso">El Paso</option>
+                <option value="Garafía">Garafía</option>
+            </optgroup>
+        </select>
+
+        <hr>
+
+        Introduzca sus comentarios:
+
+        <br>
+
+        <textarea cols="50" rows="3" name="comentarios"> sus comentarios aqui...</textarea>
+
+        <hr>
+
+        <input type="submit" value="Aceptar">
+        <input type="reset" value="Borrar">
+    </form>
+
+</body>
+
+</html>

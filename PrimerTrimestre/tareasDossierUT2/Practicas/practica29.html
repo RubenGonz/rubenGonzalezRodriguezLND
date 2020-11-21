@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='author' content='Ruben Gonzalez Rodriguez'>
+    <title>Mi vigesimo novena tarea en html</title>
+</head>
+
+<!-- PRÁCTICA 29.- Completa el formulario anterior para que aparezca así: -->
+
+<body>
+    <h3>Intereses:</H3>
+
+    <form name="FormularioIES" action="https://blog.iespuertodelacruz.es/alumnado/" method="post">
+
+        <label for="Contraseña">CONTRASEÑA DEL PERFIL:</label>
+        <input type="password" name="Contraseña" size="25" maxlength="20">
+        <br>
+
+        <label for="Curso">CURSO:</label>
+        <input type="text" name="Curso" size="45" maxlength="35">
+        <br>
+
+        INTERESES:
+
+        <table width="35%">
+            <tr>
+                <td>
+                    <input type="checkbox" name="Informatica" checked>
+                    <label for="Informatica">Informatica</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="Deportes">
+                    <label for="Deportes">Deportes</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="Salud" checked>
+                    <label for="Salud">Salud</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="checkbox" name="Politica">
+                    <label for="Politica">Politica</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="Musica">
+                    <label for="Musica">Musica</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="Literatura">
+                    <label for="Literatura">Literatura</label>
+                </td>
+            </tr>
+        </table>
+
+        <hr>
+
+        Color favorito:
+
+        <table width="30%">
+            <tr>
+                <td>
+                    <input type="radio" name="Color" checked>
+                    <label for="ROJO">ROJO</label>
+                </td>
+                <td colspan="2" align="center">
+                    <input type="radio" name="Color">
+                    <label for="VERDE">VERDE</label>
+                </td>
+                <td>
+                    <input type="radio" name="Color">
+                    <label for="AZUL">AZUL</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="radio" name="Estacion">
+                    <label for="Verano">Verano</label>
+                </td>
+                <td>
+                    <input type="radio" name="Estacion">
+                    <label for="Otoño">Otoño</label>
+                </td>
+                <td>
+                    <input type="radio" name="Estacion" checked>
+                    <label for="Invierno">Invierno</label>
+                </td>
+                <td align="center">
+                    <input type="radio" name="Estacion">
+                    <label for="Primavera">Primavera</label>
+                </td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <input type="submit" value="Aceptar">
+        <input type="reset" value="Borrar">
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='author' content='Ruben Gonzalez Rodriguez'>
+    <title>Mi vigesimo septima tarea en html</title>
+</head>
+
+<!-- PRÁCTICA 27.- Con el código de la práctica anterior modifica el formulario
+agregando un botón con el texto ACEPTAR y otro con el texto CANCELAR. Al
+pulsar el primero se enviará un correo a tu cuenta. Al pulsar el segundo se
+enviarán los campos.
+Nota: tienes que tener un cliente de correo, como OUTLOOK, instalado, y en tu
+navegador tiene que estar definido como el programa de correo predeterminado
+(mira en opciones de Internet  programas). Prueba con varios navegadores
+como Explorer, FireFox o Safari para que observes las diferencias. -->
+
+<body>
+    <h3>DATOS PERSONALES:</H3><br>
+
+    <form name="MandarCorreo" action="mailto:ruben30303030@gmail.com" method="post">
+        <label for="Nombre">Nombre:</label>
+        <input type="text" name="nombre" placeholder="Escriba su nombre aqui" size="20" maxlength="20">
+        <br>
+        <label for="Nombre">Apellidos:</label>
+        <input type="text" name="apellidos" placeholder="Escriba sus apellidos aqui" size="22" maxlength="50">
+        <br>
+        <label for="Nombre">Edad:</label>
+        <input type="text" name="edad" placeholder="Escriba su edad aqui" size="12" maxlength="2">
+        <br>
+        <input type="submit" value="ACEPTAR">
+        <input type="reset" value="CANCELAR">
+    </form>
+</body>
+
+</html>
