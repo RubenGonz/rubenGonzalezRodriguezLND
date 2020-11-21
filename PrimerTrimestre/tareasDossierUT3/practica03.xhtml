@@ -1,5 +1,4 @@
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 
@@ -17,7 +16,7 @@
 Busca la información necesaria para usar <fieldset>, <legend> y <label> -->
 
 <body>
-    <form name="FormularioIES" action="https://blog.iespuertodelacruz.es/alumnado/" method="post">
+    <form id="FormularioIES" action="https://blog.iespuertodelacruz.es/alumnado/" method="post">
 
         <h3>Informacion sobre el producto</h3>
 
@@ -87,9 +86,12 @@ Busca la información necesaria para usar <fieldset>, <legend> y <label> -->
             <input type="radio" id="Descuento" name="Promocion" value="Descuento 5%" />
             <label for="Descuento">Descuento 5%</label>
         </fieldset>
+        
+        <p>
+            <input type="submit" value="Aceptar" />
+            <input type="reset" value="Borrar" />
+        </p>
 
-        <input type="submit" value="Aceptar" />
-        <input type="reset" value="Borrar" />
     </form>
 </body>
 

@@ -1,5 +1,4 @@
-<!DOCTYPE html
-    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 
@@ -16,68 +15,72 @@ Datos personales: nombre, apellidos, dirección, código postal, isla (es un sel
 Datos de contacto: teléfono, móvil, fax, email. -->
 
 <body>
-    <form name="FormularioIES" action="https://blog.iespuertodelacruz.es/alumnado/" method="post">
+    <form id="FormularioIES" action="https://blog.iespuertodelacruz.es/alumnado/" method="post">
 
         <h1>Formulario del alumno</h1>
 
         <h2>Datos personales</h2>
+        <p>
+            <label for="Nombre">Nombre:</label>
+            <input type="text" id="Nombre" size="25" maxlength="20" />
 
-        <label for="Nombre">Nombre:</label>
-        <input type="text" id="Nombre" size="25" maxlength="20" />
+            <br />
 
-        <br />
+            <label for="Apellidos">Apellidos:</label>
+            <input type="text" id="Apellidos" size="35" maxlength="30" />
 
-        <label for="Apellidos">Apellidos:</label>
-        <input type="text" id="Apellidos" size="35" maxlength="30" />
+            <br />
 
-        <br />
+            <label for="Direccion">Direccion</label>
+            <input type="text" id="Direccion" size="35" maxlength="30" />
 
-        <label for="Direccion">Direccion</label>
-        <input type="text" id="Direccion" size="35" maxlength="30" />
+            <br />
 
-        <br />
+            <label for="CdPostal">Codigo Postal:</label>
+            <input type="text" id="CdPostal" size="7" maxlength="5" />
 
-        <label for="CdPostal">Codigo Postal:</label>
-        <input type="text" id="CdPostal" size="7" maxlength="5" />
+            <br />
 
-        <br />
+            <label for="Isla">Isla:</label>
+            <select id="Isla">
+                <option value="El Hierro">El Hierro</option>
+                <option value="La Palma">La Palma</option>
+                <option value="La Gomera">La Gomera</option>
+                <option value="Tenerife">Tenereife</option>
+                <option value="Gran Canaria">Gran Canaria</option>
+                <option value="Fuerteventura">Fuerteventura</option>
+                <option value="Lanzarote">Lanzarote</option>
+                <option value="La Graciosa">La Graciosa</option>
+            </select>
+        </p>
 
-        <label for="Isla">Isla:</label>
-        <select id="Isla">
-            <option value="El Hierro">El Hierro</option>
-            <option value="La Palma">La Palma</option>
-            <option value="La Gomera">La Gomera</option>
-            <option value="Tenerife">Tenereife</option>
-            <option value="Gran Canaria">Gran Canaria</option>
-            <option value="Fuerteventura">Fuerteventura</option>
-            <option value="Lanzarote">Lanzarote</option>
-            <option value="La Graciosa">La Graciosa</option>
-        </select>
 
         <h2>Datos de contacto</h2>
+        <p>
+            <label for="Telefono">Telefono:</label>
+            <input type="text" id="Telefono" size="14" maxlength="9" />
 
-        <label for="Telefono">Telefono:</label>
-        <input type="text" id="Telefono" size="14" maxlength="9" />
+            <br />
 
-        <br />
+            <label for="Movil">Movil:</label>
+            <input type="text" id="Movil" size="14" maxlength="9" />
 
-        <label for="Movil">Movil:</label>
-        <input type="text" id="Movil" size="14" maxlength="9" />
+            <br />
 
-        <br />
+            <label for="Fax">Fax</label>
+            <input type="text" id="Fax" size="55" maxlength="50" />
 
-        <label for="Fax">Fax</label>
-        <input type="text" id="Fax" size="55" maxlength="50" />
+            <br />
 
-        <br />
+            <label for="Email">Email:</label>
+            <input type="text" id="Email" size="35" maxlength="30" />
 
-        <label for="Email">Email:</label>
-        <input type="text" id="Email" size="35" maxlength="30" />
+            <br />
 
-        <br />
+            <input type="submit" value="Aceptar" />
+            <input type="reset" value="Borrar" />
+        </p>
 
-        <input type="submit" value="Aceptar" />
-        <input type="reset" value="Borrar" />
     </form>
 </body>
 
