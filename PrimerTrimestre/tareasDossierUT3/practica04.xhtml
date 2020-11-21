@@ -1,0 +1,93 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta name='author' content='Ruben Gonzalez Rodriguez' />
+    <title>Mi cuarta tarea en xhtml</title>
+</head>
+
+<!-- PRACTICA 04.- Valida el ejercicio anterior de la página del formulario con el validador de la w3c.
+Revisa y corrige los errores hasta que la validación sea perfecta. -->
+
+<body>
+    <form name="FormularioIES" action="https://blog.iespuertodelacruz.es/alumnado/" method="post">
+
+        <h3>Informacion sobre el producto</h3>
+
+        <fieldset>
+            <legend>
+                Datos básicos
+            </legend>
+
+            <label for="Nombre">Nombre</label>
+
+            <br />
+
+            <input type="text" id="Nombre" size="66" maxlength="61" />
+
+            <br />
+            <br />
+
+            <label for="Descripcion">Descripcion</label>
+
+            <br />
+
+            <textarea cols="50" rows="4" id="Descripcion"></textarea>
+
+            <br />
+            <br />
+
+            <label for="Foto">Foto</label>
+            <input type="file" id="Foto" />
+
+            <br />
+            <br />
+
+            <input type="checkbox" id="Contador" />
+            <label for="Contador">Contador de visitas</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Datos economicos
+            </legend>
+
+            <label for="Precio">Precio</label>
+            <input type="text" id="Precio" size="9" maxlength="4" />
+            <label for="Precio">€</label>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <label for="Impuestos">Impuestos</label>
+            <select id="Impuestos">
+                <option value="0.04">4%</option>
+                <option value="0.07">7%</option>
+                <option value="0.16">16%</option>
+                <option value="0.25">25%</option>
+            </select>
+
+            <br />
+            <br />
+
+            <label for="Ninguno">Promocion</label>
+            <br />
+            <input type="radio" id="Ninguno" name="Promocion" value="Ninguno" />
+            <label for="Ninguno">Ninguno</label>
+            <br />
+            <input type="radio" id="Transporte" name="Promocion" value="Transporte gratuito" />
+            <label for="Transporte">Transporte gratuito</label>
+            <br />
+            <input type="radio" id="Descuento" name="Promocion" value="Descuento 5%" />
+            <label for="Descuento">Descuento 5%</label>
+        </fieldset>
+
+        <input type="submit" value="Aceptar" />
+        <input type="reset" value="Borrar" />
+    </form>
+</body>
+
+</html>

@@ -18,7 +18,7 @@ Sebastián. En la Palma las tenemos en Mazo, El Paso y en Garafía. -->
     <form name="FormularioIES" action="https://blog.iespuertodelacruz.es/alumnado/" method="post">
 
         <label for="ColorFondoFav">COLOR DE FONDO FAVORITO:</label>
-        <select name="ColorFondoFav">
+        <select name="ColorFondoFav" id="ColorFondoFav">
             <option value="#000000">Negro</option>
             <option value="#008F39">Verde</option>
             <option value="#FF0000" selected>Rojo</option>
@@ -29,7 +29,7 @@ Sebastián. En la Palma las tenemos en Mazo, El Paso y en Garafía. -->
         <hr>
 
         <label for="Intereses">INTERESES:</label>
-        <select name="Intereses" size="4" multiple>
+        <select name="Intereses" id="Intereses" size="4" multiple>
             <option value="Mascotas">Mascotas</option>
             <option value="Informatica">Informatica</option>
             <option value="Literatura">Literatura</option>
@@ -39,7 +39,7 @@ Sebastián. En la Palma las tenemos en Mazo, El Paso y en Garafía. -->
         </select>
 
         <label for="Sucursales">SUCURSALES:</label>
-        <select name="Sucursales" size="8">
+        <select name="Sucursales" id="Sucursales" size="8">
             <optgroup label="Tenerife">
                 <option value="La Laguna">Mascotas</option>
                 <option value="Puerto de la Cruz">Puerto de la Cruz</option>
@@ -68,11 +68,11 @@ Sebastián. En la Palma las tenemos en Mazo, El Paso y en Garafía. -->
 
         <hr>
 
-        Introduzca sus comentarios:
-
+        <label for="comentarios">Introduzca sus comentarios:</label>
+        
         <br>
 
-        <textarea cols="50" rows="3" name="comentarios"> sus comentarios aqui...</textarea>
+        <textarea cols="50" rows="3" id="comentarios"> sus comentarios aqui...</textarea>
 
         <hr>
 
