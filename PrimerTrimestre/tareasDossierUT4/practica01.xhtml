@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+<!-- PRÁCTICA 01.- Retomamos la práctica xhtml realizada en el tema anterior,
+que tenía este aspecto:
+
+1) Los textos “nombre” y “descripción” deben aparecer en color verde.
+2) El input para el nombre y el textarea para descripción deben aparecer con
+fondo gris claro y letra azul.
+3) El input para el precio debe aparecer con fondo rojo y letra de tipo Arial 16
+negrita.
+4) El texto “descuento 5%” debe aparecer con un borde verde discontinuo de 5
+píxeles.
+Para hacer esta práctica tendrás que conocer los nombres de las propiedades
+CSS, busca la información en Internet.
+http://www.w3c.es/divulgacion/guiasreferencia/css21/
+5) Cuando hayas terminado usa el validador CSS publicado en el w3c para ver
+si el documento es correcto.
+http://jigsaw.w3.org/css-validator/#validate_by_upload -->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta name='author' content='Ruben Gonzalez Rodriguez' />
+    <title>Mi primera tarea usando CSS</title>
+
+    <style type="text/css">
+        .primerRequisito label {
+            color: green;
+        }
+
+        .segundoRequisito input,
+        textarea {
+            background-color: lightgrey;
+            color: blue;
+        }
+
+        .tercerRequisito input {
+            background-color: red;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .cuartoRequisito label {
+            border: green;
+            border: dashed;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="FormularioIES" action="https://blog.iespuertodelacruz.es/alumnado/" method="post">
+
+        <h3>Informacion sobre el producto</h3>
+
+        <fieldset>
+            <legend>
+                Datos básicos
+            </legend>
+
+            <div class="primerRequisito segundoRequisito">
+
+                <label for="Nombre">Nombre</label>
+
+                <br />
+
+                <input type="text" id="Nombre" size="66" maxlength="61" />
+
+                <br />
+                <br />
+
+                <label for="Descripcion">Descripcion</label>
+
+                <br />
+
+                <textarea cols="50" rows="4" id="Descripcion"></textarea>
+
+            </div>
+
+            <br />
+
+            <label for="Foto">Foto</label>
+            <input type="file" id="Foto" />
+
+            <br />
+            <br />
+
+            <input type="checkbox" id="Contador" />
+            <label for="Contador">Contador de visitas</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Datos economicos
+            </legend>
+
+            <label for="Precio">Precio</label>
+            <span class="tercerRequisito">
+                <input type="text" id="Precio" size="9" maxlength="4" />
+            </span>
+            <label for="Precio">€</label>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <label for="Impuestos">Impuestos</label>
+            <select id="Impuestos">
+                <option value="0.04">4%</option>
+                <option value="0.07">7%</option>
+                <option value="0.16">16%</option>
+                <option value="0.25">25%</option>
+            </select>
+
+            <br />
+            <br />
+
+            <label for="Ninguno">Promocion</label>
+            <br />
+            <input type="radio" id="Ninguno" name="Promocion" value="Ninguno" />
+            <label for="Ninguno">Ninguno</label>
+            <br />
+            <input type="radio" id="Transporte" name="Promocion" value="Transporte gratuito" />
+            <label for="Transporte">Transporte gratuito</label>
+            <br />
+            <input type="radio" id="Descuento" name="Promocion" value="Descuento 5%" />
+            <span class="cuartoRequisito">
+                <label for="Descuento">Descuento 5%</label>
+            </span>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Aceptar" />
+            <input type="reset" value="Borrar" />
+        </p>
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+
+<!-- PRÁCTICA 05.- Observa la siguiente página web con párrafos del capítulo 4
+del Quijote. Para obtener este resultado sigue los siguientes apartados:
+
+Obtén el texto de Internet http://www.elmundo.es/quijote/capitulo.html?cual=4
+
+En el código xhtml realiza los siguientes cambios:
+1) El título es una cabecera de nivel 1.
+2) El capítulo es una cabecera de nivel 3.
+3) El resumen del capítulo es una cabecera de nivel 5, al igual que el párrafo
+que aparece con tabulación.
+4) El resto de párrafos utilizan <p>.
+5) Encierra las palabras “Don Quijote”, “Rocinante” y “voces” dentro de span.
+
+Aplica los siguientes estilos:
+
+1) Todos los elementos de la página tienen color verde (selector universal).
+2) Los párrafos y las cabeceras de nivel 5 tienen color azul (selector etiqueta).
+3) Las cabeceras de nivel 5 tienen un margen izquierdo de 100 píxeles.
+4) La cabecera de nivel 1 tiene un espaciado de palabras de 20 píxeles.
+5) Aplica un tachado en todos los span que están dentro de p (selector
+descendente). ¿Qué pasa con el color de la letra en estos span?-->
+
+
+
+
+<!-- La respuesta es que al estar el *, es decir el selector universal, con la 
+caracteristica de color: green; todo el texto que no este siendo afectado por 
+otra etiqueta de style de color permanecerá de color verde.
+Span no tiene ningun atributo de color por lo que se le aplica la puesta en *-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta name='author' content='Ruben Gonzalez Rodriguez' />
+    <title>Mi quinta tarea usando CSS</title>
+
+    <style type="text/css">
+        *{
+            color: green;
+        }
+
+        h5,p{
+            color: blue;
+        }
+
+        h5{
+            margin-left: 100px;
+        }
+
+        h1{
+            word-spacing: 20px;
+        }
+
+        span{
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Don Quijote de La Mancha
+    </h1>
+
+    <h3>
+        Capítulo cuarto
+    </h3>
+    
+    <h5>
+        De lo que le sucedió a nuestro caballero cuando salió de la venta
+    </h5>
+
+    <p>
+        La del alba sería cuando <span>Don Quijote</span> salió de la venta, tan contento, tan 
+        gallardo, tan alborozado por verse ya armado caballero, que el gozo le reventaba por las 
+        cinchas del caballo.
+    </p>
+
+    <p>
+        Mas viniéndole a la memoria los consejos de su huésped acerca de las prevenciones tan 
+        necesarias que había de llevar consigo, en especial la de los dineros y camisas, 
+        determinó volver a su casa y acomodarse de todo, y de un escudero, haciendo cuenta de 
+        recibir a un labrador vecino suyo, que era pobre y con hijos, pero muy a propósito para 
+        el oficio escuderil de la caballería.
+    </p>
+
+    <p>
+        Con este pensamiento guió a <span>Rocinante</span> hacia su aldea, el cual casi conociendo 
+        la querencia, con tanta gana comenzó a caminar, que parecía que no ponía los pies en el 
+        suelo.
+    </p>
+
+    <p>
+        No había andado mucho, cuando le pareció que a su diestra mano, de la espesura de un 
+        bosque que allí estaba, salían unas <span>voces</span> delicadas, como de persona que se 
+        quejaba; y apenas las hubo oído, cuando dijo:
+    </p>
+
+    <h5>
+        gracias doy al cielo por la merced que me hace, pues tan presto me pone ocasiones 
+        delante, donde yo pueda cumplir con lo que debo a mi profesión, y donde pueda coger 
+        el fruto de mis buenos deseos:
+    </h5>
+
+    <p>
+        estas <span>voces</span> sin duda son de algún menesteroso o menesterosa, que ha menester 
+        mi favor y ayuda: y volviendo las riendas encaminó a <span>Rocinante</span> hacia donde le 
+        pareció que las <span>voces</span> salían
+    </p>
+</body>
+
+</html>

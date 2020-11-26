@@ -1,0 +1,20 @@
+PRÁCTICA 10.- Indica a quién se aplicará estos estilos.
+
+1) a.titulo {…}
+
+Se le aplicará a los enlaces que tengan la clase titulo.
+
+2) a .titulo {…}
+
+Se le aplicará a las etiquetas con la clase 
+titulo que esten dentro de un enlace.
+
+3) a, .titulo {…}
+
+Se le aplicará a los enlaces y a las etiquetas con la clase 
+titulo.
+
+4) p a.titulo {…}
+
+Se le aplicará a los enlaces que tengan la clase titulo que 
+esten dentro de un parrafo.

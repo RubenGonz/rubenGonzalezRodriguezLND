@@ -1,0 +1,23 @@
+PRÁCTICA 06.- Analiza el código y responde ¿Qué hacen las siguientes reglas
+CSS?
+
+1) table p {text-align: justify}
+
+Esta regla dice que todo parrafo que este dentro de una tabla tendrá qe tener
+el texto fustificado.
+
+2) table p a {word-spacing: 10px}
+
+Esta regla dice que todo enlace dentro de un parrafo que a su vez este dentro 
+de una tabla tendrá qe tener el texto fustificado.
+
+3) table, p, a {background-image: gato.gif}
+
+Esta regla dice que toda tabla, parrafo y enlace tendran que tener la imagen
+gato.gif de color de fondo.
+
+4) p * a {border-top: solid 2px green}
+
+Esta regla dice que todo enlace que este dentro de una etiqueta y que a su 
+vez esta etiqueta este dentro de un parrafo tendrá que tener un borde 
+superior solido de color verde con una anchura de 2 px.
