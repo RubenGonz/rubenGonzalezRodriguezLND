@@ -1,0 +1,61 @@
+/*colores no estandar:
+#CC3300 usado como color de letra en p
+#336699 usado como color de letra de li
+#A9F5F2 usado como color de fondo en p 
+#FFFFCC usado como color de fondo de h1
+#FFCC99 usado como color de fondo de h3
+#FF9900 usado como color de borde de h3
+Tipo de letra: Arial si no está disponible: Helvetica y si no: sans-serif
+*/
+
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	border: dotted;
+	background-color: #FFFFCC;
+	text-align: center;
+	padding: 50px 100px;
+	font-weight: normal;
+}
+
+h2 {
+	color: #CC3300;
+	padding: 20px 50px;
+	font-weight: normal;
+	font-size: 17px;
+}
+
+h3 {
+	border: solid 2px;
+	border-color: #FF9900;
+	background-color: #FFCC99;
+	font-weight: normal;
+}
+
+h4 {
+	background-color: gray;
+	width: 65%;
+	font-size: 12px;
+}
+
+ol {
+	font-size: 11px;
+}
+
+li {
+	color: #336699;
+	width: 60%;
+}
+
+p{
+	color: red;
+	background-color: #A9F5F2;
+	text-indent: 30px;
+}
+
+b {
+	border: solid 1px;
+	font-weight: normal;
+}
