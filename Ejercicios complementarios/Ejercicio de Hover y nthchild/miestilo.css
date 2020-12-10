@@ -1,0 +1,69 @@
+table {
+    border: outset 5px gray;
+    border-spacing: 6px;
+    border-collapse: separate;
+    background-color: #F3E2A9;
+}
+
+td {
+    border: solid 1px gray;
+}
+
+tr:nth-child(2n) {
+    background-color: #81F79F;
+}
+
+tr:nth-child(2n):hover {
+    background-color: yellow;
+}
+
+tr:nth-child(2n + 3) {
+    background-color: #81DAF5;
+}
+
+tr:nth-child(2n + 3):hover {
+    background-color: yellow;
+}
+
+.cabecera {
+    background-color: #FAAC58;
+    color: green;
+}
+
+.alineadoDcha {
+    text-align: right;
+}
+
+.euro {
+    background-color: #E6E6E6 ;
+}
+
+.dolar {
+    background-color:  #D8D8D8 ;
+}
+
+.libra {
+    background-color: #BDBDBD ;
+}
+
+.yen {
+    background-color: #A4A4A4 ;
+}
+
+/*
+-- bordes
+    gray        bordes de la tabla general y de las celdas sin clase
+-- colores de fondo
+    #E6E6E6;    color de fondo de la clase euro
+    #D8D8D8;    color de fondo de la clase dolar
+    #BDBDBD;    color de fondo de la clase libra
+    #A4A4A4;    color de fondo de la clase yen
+    #81F79F;    color de fondo de las celdas tr:nth-child(2n) 
+    #81DAF5;    color de fondo de las celdas tr:nth-child(2n + 3) 
+    yellow;     color de fondo de hover
+    #F3E2A9;    color de fondo de la tabla
+    #FAAC58;    color de fondo de la cabecera
+-- colores de fuente
+    green;      color de fuente de la clase cabecera
+
+*/
