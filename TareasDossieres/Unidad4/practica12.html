@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='author' content='Ruben Gonzalez Rodriguez'>
+    <title>Mi duodecima tarea usando CSS</title>
+
+    <style type="text/css">
+        table {
+            border: solid 1px;
+            color: #CC99FF;
+            width: 25%;
+        }
+
+        .cabecera {
+            background-color: #CC99FF;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .cuerpo {
+            background-color: white;
+            color: darkblue;
+            font-size: 12px;
+            text-align: justify;
+        }
+
+        .pie {
+            background-color: #CC99FF;
+            color: white;
+            font-size: 10px;
+            text-align: right;
+        }
+
+        .cuerpo td:nth-child(1) {
+            text-indent: 60px;
+        }
+
+        .pie a:link {
+            color: white;
+        }
+
+        .pie a:hover {
+            color: red;
+        }
+
+        .pie a:visited {
+            color: darkblue;
+        }
+    </style>
+
+</head>
+
+<!-- PRÁCTICA 12.- Retoma la práctica 8 y convierte los textos en los pie de tabla
+en enlaces que apuntes a los dossieres del temario. Cuando se pasa por encima
+de ellos se pondrán con fondo rojo, y cuando estén visitados se pondrán en color
+de texto azul oscuro. Además los primeros párrafos de las tablas deben tener
+identación de 60 píxeles. 
+ -->
+
+<body>
+    <table>
+        <tr class="cabecera">
+            <td>Lenguaje HTML</td>
+        </tr>
+
+        <tr class="cuerpo">
+            <td>
+                <p>
+                    Lenguaje de marcas generico para el etiquetado de texto.
+                </p>
+
+                <p>
+                    Incorpora etiquetas para contenido y etiquetas para presentación.
+                </p>
+
+                <p>
+                    El contenido y la presentación se encuentran juntos
+                </p>
+            </td>
+        </tr>
+
+        <tr class="pie">
+            <td>
+                <a href="../../Dossieres/DOSSIER_LND_T2.pdf">Tema 2</a>
+            </td>
+        </tr>
+    </table>
+
+    <br />
+    <br />
+
+    <table>
+        <tr class="cabecera">
+            <td>Lenguaje XHTML</td>
+        </tr>
+
+        <tr class="cuerpo">
+            <td>
+                <p>
+                    Lenguaje de marcas que hereda toda la sintaxis de HTML pero
+                    incorpora restriciones en la escritura. Este lenguaje desciende
+                    del XML.
+                </p>
+
+                <p>
+                    Se encarga de los contenidos, dejando a CSS las cuestiones que
+                    afectan a la presentación.
+                </p>
+            </td>
+        </tr>
+
+        <tr class="pie">
+            <td>
+                <a href="../../Dossieres/DOSSIER_LND_T3.pdf">Tema 3</a>
+            </td>
+        </tr>
+    </table>
+
+    <br />
+    <br />
+
+    <table>
+        <tr class="cabecera">
+            <td>Lenguaje CSS</td>
+        </tr>
+
+        <tr class="cuerpo">
+            <td>
+                <p>
+                    Lenguaje que se encarga de la presentación, esto es, del aspecto
+                    de las páginas web. Permite fijar elementos como mårgenes
+                    bordes, colores, tamaños y posición
+                </p>
+
+                <p>
+                    Se basa en la definición de reglas. Las reglas comienzan con el
+                    selector, que indica qué partes del documento HTML se verán
+                    afectadas. Después del selector se abren llaves y se definen los
+                    estilos con la sintaxis propiedad:valor.
+                </p>
+            </td>
+        </tr>
+
+        <tr class="pie">
+            <td>
+                <a href="../../Dossieres/DOSSIER_LND_T4.pdf">Tema 4</a>
+            </td>
+        </tr>
+    </table>
+
+    <br />
+    <br />
+
+    <table>
+        <tr class="cabecera">
+            <td>LENGUAJES DE MARCAS</td>
+        </tr>
+
+        <tr class="cuerpo">
+            <td>
+                <p>
+                    Asignatura de primer curso de ADMINISTRACIÓN DE
+                    SISTEMAS INFORMATICOS EN RED.
+                </p>
+            </td>
+        </tr>
+
+        <tr class="pie">
+            <td>
+                Código: LND
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

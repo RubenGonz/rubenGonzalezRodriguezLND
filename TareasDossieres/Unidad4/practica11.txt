@@ -1,0 +1,29 @@
+PRÁCTICA 11.- Indica a quién se aplicará estos estilos.
+
+1) #contacto, .titulo, a {…}
+
+Se le aplicara a las etiquedas con las id contacto, a las etiquetas con la clase titulo y a los enlaces.
+
+2) p #contacto {…}
+
+Se le aplicara a las etiquedas con las id contacto que esten dentro de un parrafo.
+
+3) p#contacto {…}
+
+Se le aplicara a los parrafos que tengan la id contacto.
+
+4) .aviso .avisoerror {…}
+
+Se le aplicara a las etiquedas con la clase avisoerror que esten dentro de las etiquedas con la clase aviso.
+
+5) div.titulo div.novedad {…}
+
+Se le aplicara a las etiquedas que esten dentro de un div con la clase novedad que a su vez esten dentro de otra etiqueta div que tenga la clase titulo.
+
+6) div.titulo span.urgente {…}
+
+Se le aplicara a las etiquedas que esten dentro de un span con la clase urgente que a su vez esten dentro de otra etiqueta div que tenga la clase titulo.
+
+7) h1 em, h2 em, h3 em {…}
+
+Se le aplicara a las etiquetas em que esten dentro de un h1, a las etiquetas em que esten dentro de un h2 y a las etiquetas em que esten dentro de un h3.
