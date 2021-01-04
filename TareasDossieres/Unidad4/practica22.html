@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='author' content='Ruben Gonzalez Rodriguez'>
+    <title>Mi vigesima segunda practica usando CSS</title>
+
+    <style>
+        .cabecera {
+            background-image: url(./Imagenes/ImagenConPatrones.jpg);
+            background-repeat: repeat;
+            background-position: center middle;
+            text-align: center;
+            color: white;
+            height: 50px;
+        }
+
+        .caja1 {
+            position: absolute;
+            top: 70px;
+            left: 0.5%;
+            background-image: url(./Imagenes/IconoGoogleChrome.png);
+            background-size: 100px;
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            border: 2px black solid;
+            width: 19.5%;
+            height: 800px;
+        }
+
+        .caja2 {
+            position: absolute;
+            left: 20%;
+            top: 70px;
+            border: 2px black solid;
+            width: 60%;
+            height: 800px;
+        }
+
+        .caja3 {
+            position: absolute;
+            left: 80%;
+            top: 70px;
+            background-image: url(./Imagenes/IconoGoogleChrome.png);
+            background-size: 100px;
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            border: 2px black solid;
+            width: 19.5%;
+            height: 800px;
+        }
+    </style>
+
+</head>
+
+<!-- 
+    PRÁCTICA 22.- Esta práctica te puede dar algún quebradero de cabeza. Tendrás que
+    combinar el posicionamiento con width y height, además de left, top y right para 
+    hacer algo como esto:
+-->
+
+<body>
+    <h1 class="cabecera">Cabecera</h1>
+
+    <div class="caja1">
+        <p>Una caja</p>
+    </div>
+
+    <div class="caja2">
+        <p>Otra caja</p>
+    </div>
+
+    <div class="caja3">
+        <p>Una tercera caja</p>
+    </div>
+</body>
+
+</html>
