@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='author' content='Ruben Gonzalez Rodriguez'>
+    <title>Mi vigesima tercera practica usando CSS</title>
+
+    <style>
+        .cabecera {
+            background-image: url(../Imagenes/ImagenConPatrones.jpg);
+            background-repeat: repeat;
+            background-position: center middle;
+        }
+
+        img {
+            height: 50px;
+            width: 50px;
+        }
+
+        img:nth-child(1) {
+            float: left;
+        }
+
+        img:nth-child(2) {
+            float: right;
+        }
+
+        div div {
+            clear: both;
+        }
+    </style>
+
+</head>
+
+<!-- 
+    PRÁCTICA 23.- 
+
+    PASO1: crea una página que tenga un div con fondo de la textura que usamos en las  
+    prácticas anteriores y ancho el 100%. Dentro del div inserta dos iconos o flechas 
+    del tipo “anterior” y “siguiente”. Como esto:
+
+    PASO2: Ahora aplica a la imagen “anterior” un float:left y a la izquiera un float:right. 
+    Obtendrás algo como esto: 
+
+    Pero el div con el fondo ha desaparecido. ¿Por qué? Pues al poner las imágenes como 
+    flotantes éstas se salen del div. Y como ahora el div no tiene ningún contenido pues 
+    no se muestra. Para evitarlo dentro del div y después de las imágenes tendremos que 
+    crear otro div donde borramos con clear el posicionamiento flotante anterior.  
+    Este segundo div se colocará debajo de las imágenes y dentro del div principal.   
+    En él tendremos que borrar el posicionamiento flotante por ambos lados.
+
+    Aplica a este div interno un clear:both. El resultado será algo como esto: 
+
+    Resultado: Nuestra barra con las dos imágenes colocadas y el fondo visible.
+ -->
+
+<body>
+    <div class="cabecera">
+        <img src="../Imagenes/FlechaRetroceder.png">
+        <img src="../Imagenes/FlechaAvanzar.png">
+        <div></div>
+    </div>
+</body>
+
+</html>
