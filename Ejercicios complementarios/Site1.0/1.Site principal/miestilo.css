@@ -95,32 +95,31 @@ h3 {
     width:50vw;
 }
 
-.floatIzquierda {
+.articulo .floatIzquierda {
     float: left;
 }
 
-.floatDerecha {
+.articulo .floatDerecha {
     float: right;
 }
 
-.enlaceCentral {
+.articulo .enlaceCentral {
     padding: 1vh;
     background-color: blue;
     text-align: center;
 }
 
-.tachado {
+.articulo .tachado {
     color: gray;
     text-decoration: line-through;
 }
 
-td img:nth-child(1) {
+.articulo td img:nth-child(1) {
     width: 7vw;
 }
 
 .articulo table {
     width: 100%;
-    align-items: center;
 }
 
 .articulo table img {
