@@ -18,6 +18,10 @@ h3 {
     text-align: center;
 }
 
+img {
+    object-fit: cover;
+}
+
 .cabecera {
     position: fixed;
     z-index: 1;
@@ -46,17 +50,19 @@ h3 {
     border-bottom: darkblue dotted 0.3vw;
 }
 
-.navegacion {
+nav {
     position: fixed;
     top: 30vh;
     left: 7.5vh;
+    padding: 0.5rem;
     background-image: linear-gradient(to right, blue, violet, blue);
     width: 15vw;
     color: white;
     border: darkblue dotted 0.3vw;
 }
 
-.articulo {
+section {
+    box-sizing: content-box;
     position: absolute;
     top: 11.7vh;
     left: 23.5vw;
@@ -65,9 +71,9 @@ h3 {
     padding: 1vw;
 }
 
-.pie {
+footer {
     position: absolute;
-    top: 250vh;
+    top: 260vh;
     background-image: radial-gradient(circle, blue, violet, blue);
     width: 100%;
     height: 10vh;
@@ -77,57 +83,66 @@ h3 {
     border-top: darkblue dotted 0.3vw;
 }
 
-.cabecera a:link,.enlacesAMisPaginas a:link, .enlaceCentral a:link, .navegacion a:link {
+header a:link, .enlaceCentral a:link, nav a:link {
     color: white;
     text-decoration: none;
 }
 
-.cabecera a:visited,.enlacesAMisPaginas a:visited, .enlaceCentral a:visited, .navegacion a:visited {
+header a:visited, .enlaceCentral a:visited, nav a:visited {
     color: white;
     text-decoration: none;
 }
 
-.cabecera a:hover,.enlacesAMisPaginas a:hover, .enlaceCentral a:hover, .navegacion a:hover {
+header a:hover, .enlaceCentral a:hover, nav a:hover {
     color: darkblue;
 }
 
-.articulo img {
+a img:hover {
+    opacity: 0.5;
+}
+
+section img {
     width:50vw;
 }
 
-.articulo .floatIzquierda {
+section .floatIzquierda {
     float: left;
 }
 
-.articulo .floatDerecha {
+section .floatDerecha {
     float: right;
 }
 
-.articulo .enlaceCentral {
+section .enlaceCentral {
     padding: 1vh;
     background-color: blue;
     text-align: center;
 }
 
-.articulo .tachado {
+h2+p {
+    text-indent: 5rem;
+}
+
+section .tachado {
     color: gray;
     text-decoration: line-through;
 }
 
-.articulo td img:nth-child(1) {
+section td img:nth-child(1) {
     width: 7vw;
 }
 
-.articulo table {
+section table {
+    box-sizing: border-box;
     width: 100%;
 }
 
-.articulo table img {
+section table img {
     margin: auto;
     display: block;
 }
 
-.articulo table td {
+section table td {
     text-align: right;
 }
 
