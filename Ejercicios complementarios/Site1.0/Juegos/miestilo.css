@@ -96,7 +96,7 @@ section {
 
 footer {
     position: absolute;
-    top: 560vh;
+    top: 590vh;
     background-image: radial-gradient(circle, var(--azul), var(--violeta), var(--azul));
     width: 100%;
     height: 10vh;
