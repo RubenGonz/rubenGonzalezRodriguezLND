@@ -14,6 +14,20 @@ h1 {
     margin: 0px;
 }
 
+#intro {
+    text-decoration: underline;
+}
+
+h2:not(#intro){
+    padding: 1rem;
+    border-top: double blue;
+    border-bottom: double blue;
+}
+
+h2+p {
+    text-indent: 5rem;
+}
+
 h3 {
     text-align: center;
 }
@@ -104,12 +118,6 @@ a img:hover {
 
 article h2:nth-of-type(2n) {
     color: blue;
-}
-
-article h2:nth-of-type(1) {
-    padding: 1rem;
-    border-top: double blue;
-    border-bottom: double blue;
 }
 
 section img {
