@@ -1,0 +1,53 @@
+Los dos elementos css que elegi para el trabajo fueron colum-count y box-shadow.
+
+1. Colum-count:
+
+Es un elemento CSS destinado a repartr una cantidad de informacion en varias columnas 
+en vez de hacerlo en solo una.
+
+Por ejemplo si tengo:
+
+
+<ul>
+    <li>Columna numero 1</li>
+    <li>Columna numero 2</li>
+</ul>
+
+
+y le aplico:
+
+
+ul {
+    column-count: 2;
+}
+
+El resultado sera que se quedara una lista no ordenada donde habra dos columnas, una que empieza 
+a la izquierda y otra que empezara casi a la mitad del contenedor padre. 
+
+Tiene un 95.9 % de compatibilidad con los navegadores.
+
+2. Box-shadow:
+
+Es un elemento CSS destinado a crear una sombra cercana al elemento, puede ser exterior o interior.
+Puedes dirigir la sombra en la direccion que elijas, darle color, decidir como de profunda o larga
+la quieras...
+
+Por ejemplo si tengo:
+
+
+<div>
+    Esto es un texto dentro de un div
+</div>
+
+
+y le aplico:
+
+
+div {
+    box-shadow: 5px 2px red;
+}
+
+El resultado sera que se quedara una sombra sin difuminar(por no haber puesto nada despues de la 
+direccion de la sombra) que se extiende 5 px a la derecha y 2 px hacia abajo.
+
+Tiene un 97.98 % de compatibilidad con los navegadores.

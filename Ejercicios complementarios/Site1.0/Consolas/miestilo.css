@@ -2,6 +2,22 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+    --azul: blue;
+    --violeta: violet;
+    --azulOscuro: darkblue;
+    --blanco: white;
+    --gris: gray;
+}
+
+body {
+    margin: 0px;
+    background-position: left;
+    background-repeat: repeat;
+    background-size: 10vw;
+    background-image: url(../2.Imagenes/FondoDelSite.jpg);
+}
+
 h1 {
     margin: 0px;
 }
@@ -13,16 +29,8 @@ h1 {
 h3 {
     text-align: center;
     padding: 1rem;
-    border-top: double blue;
-    border-bottom: double blue;
-}
-
-body {
-    margin: 0px;
-    background-position: left;
-    background-repeat: repeat;
-    background-size: 10vw;
-    background-image: url(../2.Imagenes/FondoDelSite.jpg);
+    border-top: double var(--azul);
+    border-bottom: double var(--azul);
 }
 
 img {
@@ -33,13 +41,13 @@ img {
     position: fixed;
     z-index: 1;
     margin: 0px;
-    background-image: radial-gradient(circle, blue, violet, blue);
+    background-image: radial-gradient(circle, var(--azul), var(--violeta), var(--azul));
     height: 5vh;
     width: 100%;
     text-align: center;
-    font-size: 1.5em;
-    color: white;
-    border-bottom: darkblue dotted 0.3vw;
+    font-size: 1.5rem;
+    color: var(--blanco);
+    border-bottom: var(--azulOscuro) dotted 0.3vw;
 }
 
 .enlacesAMisPaginas {
@@ -47,14 +55,14 @@ img {
     top: 5.5vh;
     left: auto;
     float: left;
-    background-image: radial-gradient(circle, blue, violet, blue);
+    background-image: radial-gradient(circle,  var(--azul), var(--violeta), var(--azul));
     width: 12.5%;
     height: 4vh;
     padding-top: 1.5vh;
     text-align: center;
-    font-size: 1.5em;
-    color: white;
-    border-bottom: darkblue dotted 0.3vw;
+    font-size: 1.5rem;
+    color: var(--blanco);
+    border-bottom: var(--azulOscuro) dotted 0.3vw;
 }
 
 nav {
@@ -62,10 +70,10 @@ nav {
     top: 30vh;
     left: 7.5vh;
     padding: 0.5rem;
-    background-image: linear-gradient(to right, blue, violet, blue);
+    background-image: linear-gradient(to right, var(--azul), var(--violeta), var(--azul));
     width: 15vw;
-    color: white;
-    border: darkblue dotted 0.3vw;
+    color: var(--blanco);
+    border: var(--azulOscuro) dotted 0.3vw;
 }
 
 section {
@@ -73,7 +81,7 @@ section {
     position: absolute;
     top: 11.7vh;
     left: 23.5vw;
-    background-color: white;
+    background-color: var(--blanco);
     width: 50vw;
     padding: 1vw;
 }
@@ -81,36 +89,37 @@ section {
 footer {
     position: absolute;
     top: 210vh;
-    background-image: radial-gradient(circle, blue, violet, blue);
+    background-image: radial-gradient(circle, var(--azul), var(--violeta), var(--azul));
     width: 100%;
     height: 10vh;
     text-align: center;
-    font-size: 1.5em;
-    color: white;
-    border-top: darkblue dotted 0.3vw;
+    font-size: 1.5rem;
+    color: var(--blanco);
+    border-top: var(--azulOscuro) dotted 0.3vw;
 }
 
 header a:link, .enlaceCentral a:link, nav a:link {
-    color: white;
+    color: var(--blanco);
     text-decoration: none;
 }
 
 header a:visited, .enlaceCentral a:visited, nav a:visited {
-    color: white;
+    color: var(--blanco);
     text-decoration: none;
 }
 
 header a:hover, .enlaceCentral a:hover, nav a:hover {
-    color: darkblue;
+    color: var(--azulOscuro);
 }
 
 a img:hover {
     opacity: 0.5;
+    box-shadow: 3px 3px 8px var(--azul), 3px -3px 8px var(--azul), -3px 3px 8px var(--azul), -3px -3px 8px var(--azul);
 }
 
 .enlaceCentral {
     padding: 1vh;
-    background-color: blue;
+    background-color: var(--azul);
     text-align: center;
 }
 
@@ -119,7 +128,7 @@ h2+p {
 }
 
 section .tachado {
-    color: gray;
+    color: var(--gris);
     text-decoration: line-through;
 }
 
