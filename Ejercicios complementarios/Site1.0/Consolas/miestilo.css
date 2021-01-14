@@ -6,6 +6,10 @@ h1 {
     margin: 0px;
 }
 
+#intro {
+    text-decoration: underline;
+}
+
 h3 {
     text-align: center;
     padding: 1rem;

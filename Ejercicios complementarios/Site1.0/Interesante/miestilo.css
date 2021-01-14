@@ -14,6 +14,10 @@ h1 {
     margin: 0px;
 }
 
+#intro {
+    text-decoration: underline;
+}
+
 h3 {
     text-align: center;
     padding: 1rem;
@@ -23,6 +27,10 @@ h3 {
 
 img {
     object-fit: cover;
+}
+
+#derecha {
+    text-align: right;
 }
 
 .cabecera {
