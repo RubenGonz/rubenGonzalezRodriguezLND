@@ -1,0 +1,52 @@
+:root {
+    font-family: Arial;
+}
+
+* {
+    background-color: gray;
+}
+
+#cabecera {
+    width: 60%;
+    margin: auto;
+    background-color: white;
+    border: 3px solid yellow;
+}
+
+#cuerpo {
+    background-color: pink;
+}
+
+#pie {
+    background-color: white;
+    border: 3px dotted red;
+}
+
+h1 {
+    background-color: green;
+    text-align: center;
+    color: white;
+}
+
+.caja {
+    display: inline-block;
+    width: 20%;
+    height: 100px;
+    border: 3px solid blue; 
+}
+
+.caja:nth-of-type(6) {
+    position: relative;
+    top: -4vh ;
+    left: 4vw ;
+    background-color: red;
+    opacity: 0.8;
+}
+
+.caja:nth-of-type(8) {
+    position: absolute;
+    top: 26vh ;
+    left: 73vw ;
+    background-color: red;
+    opacity: 0.8;
+}
