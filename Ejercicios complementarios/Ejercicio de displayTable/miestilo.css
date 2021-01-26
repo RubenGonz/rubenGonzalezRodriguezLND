@@ -1,0 +1,28 @@
+.tablagen{
+    display: table;
+    
+    margin: auto;
+    border: 4px solid blue;
+    border-spacing: 10px;
+}
+
+.fila{
+    display: table-row;
+    
+    counter-increment: section;
+    counter-reset: subsection;
+}
+
+.col{
+    display: table-cell;
+
+    padding: 10px;
+    background: #dddddd;
+    border: 4px solid pink;
+
+    counter-increment: subsection;
+}
+
+.col:before{ 
+    content: counter(section) "." counter(subsection);
+}
