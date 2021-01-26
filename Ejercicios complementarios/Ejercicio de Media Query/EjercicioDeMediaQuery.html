@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='author' content='Ruben Gonzalez Rodriguez'>
+    <title>Ejercicio de Media Query</title>
+
+    <link rel="stylesheet" href="miestilo.css">
+</head>
+
+<body>
+
+    <h1>:not() :before() :after() all , sobreescritura visibility media query</h1>
+
+    <div class="contenedor">
+
+        <h2>div class contenedor</h2>
+
+        <p>
+            1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eveniet
+            quibusdam ex atque repellat, obcaecati nostrum reprehenderit itaque sit natus
+            quos! Aliquam rem alias excepturi iusto eum similique eius dicta.
+        </p>
+
+        <p>
+            2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, dignissimos.
+            ipsum.
+        </p>
+
+        <p>
+            3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed placeat illo
+            voluptatibus. Blanditiis earum officia vitae non quas. Numquam, eveniet! ipsum
+            dolor.
+        </p>
+
+        <p>
+            4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, cupiditate
+            quos hic amet repellendus. Ab temporibus dolore laudantium a fugiat accusamus
+            consectetur porro quisquam laboriosam sint ex ducimus tempore, repudiandae?
+            ipsum dolor sit.
+        </p>
+
+        <h4>el párrafo 5 lo excluimos mediante :not()</h4>
+
+        <p>
+            5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus,
+            aut. ipsum dolor sit amet.
+        </p>
+
+        <p>
+            6 Lorem ipsum dolor sit amet, consectetur.
+        </p>
+
+        <h4>
+            el párrafo 7 sive para visualizar otra forma. Primero establecemos en todo p border
+            y p:after un background luego lo quitamos de nuevo con border 0 y background: none
+        </h4>
+
+        <p>7 Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+
+        <p>
+            8 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum eaque debitis odio,
+            delectus quae ratione nam corrupti, exercitationem vitae aliquid, molestias eum sapiente.
+            In quibusdam quis quaerat odit, nemo dolor? ipsum dolor sit amet, consectetur adipisicing
+            elit.
+        </p>
+
+        <h4>
+            el párrafo 9 nos sirve para conocer: all esta propiedad es menos controlable que la
+            sobreescritura y puede no tener un soporte completo en navegadores pero vemos que
+            podemos eliminar el formato anterior con all:unset Si queremos que desaparezca el
+            after sobreescribimos :after con content="" o mediante all:unset
+        </h4>
+
+        <p>9 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam!</p>
+
+        <p>10 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, autem?</p>
+
+        <p>
+            11 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam expedita
+            voluptatum nobis assumenda, alias nisi, maxime voluptatem. Cupiditate optio sed
+            perspiciatis alias corporis laudantium incidunt, ad, nostrum pariatur aut quam.
+            ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, voluptates, et.
+        </p>
+
+        <p>
+            12 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi iusto, est
+            ducimus.
+        </p>
+
+        <p>
+            13 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt nostrum quae
+            in ipsa.
+        </p>
+
+        <h5>
+            La virgulilla: ~ es un selector interesante. Aquí todo p posterior a este h5 le
+            cambiamos el border y el color de fuente Este comportamiento sería equivalente a:
+            h5+p h5+p+p h5+p+p+p ...
+        </h5>
+
+        <p>
+            14 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius magnam iusto
+            deserunt enim sed!
+        </p>
+
+        <p>
+            15 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium commodi
+            explicabo, repellat velit facere ut.
+        </p>
+
+        <h4>
+            En ocasiones queremos que algo no se vea pero ocupe el espacio que le corresponde.
+            Aquí en el p16 lo hacemos con visibility: hidden
+        </h4>
+
+        <p>
+            16 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita rerum temporibus,
+            magni totam, doloremque ducimus officia.
+        </p>
+
+        <p>
+            17 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi provident
+            explicabo expedita, pariatur culpa facilis laudantium distinctio!
+        </p>
+
+        <h4>
+            El párrafo 18 lo eliminamos del flujo mediante display: none y si hacemos hover
+            en este h4 reaparece con un nuevo background
+        </h4>
+
+        <p>
+            18 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, minima molestiae
+            ducimus quisquam distinctio aliquam ad aut itaque.
+        </p>
+
+        <p>
+            19 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint itaque provident,
+            nihil corrupti, fugiat voluptatibus tempore officia ex odio?
+        </p>
+
+        <p>
+            20 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates facilis,
+            quibusdam mollitia ipsa saepe omnis eum facere harum illo iure.
+        </p>
+
+    </div>
+</body>
+
+</html>

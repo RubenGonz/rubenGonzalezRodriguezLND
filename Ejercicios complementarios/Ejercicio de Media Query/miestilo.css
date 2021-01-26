@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    background-color: #B49C9C;
+    padding: 10px;
+}
+
+.contenedor {
+    margin: 0;
+    background-color: #D1D124;
+    padding: 10px;
+}
+
+@media screen and (min-width: 700px) {
+    
+    p:not(:nth-of-type(5)):before {
+        content: "p:not(:nth-of-type(5)):before";
+        color: blue;
+    }
+
+    p:after {
+        content: "p:after";
+        background-color: gray;
+    }
+
+    p {
+        border: 1px solid gray;
+    }
+
+    p:nth-of-type(7) {
+        border: 0;
+    }
+
+    p:nth-of-type(7):after {
+        background: none;
+    }
+
+    p:nth-of-type(9) {
+        all: unset;
+    }
+
+    p:nth-of-type(9):after {
+        all: unset;
+    }
+
+    h5~p {
+        border: unset;
+        color: #068201;
+    }
+
+    p:nth-of-type(16) {
+        visibility: hidden;
+    }
+
+    h4:last-of-type:hover+p {
+        display: block;
+    }
+
+    p:nth-of-type(18) {
+        display: none;
+    }
+}
