@@ -1,7 +1,0 @@
-.enlaceimagen div {
-    background: url(./Imagenes/foto.png)
-}
-
-.enlaceimagen:hover {
-    transition: 0.4s;
-}

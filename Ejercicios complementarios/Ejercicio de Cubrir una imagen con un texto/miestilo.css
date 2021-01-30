@@ -1,0 +1,44 @@
+:root {
+    --anchoArticle: 800px;
+    --anchoEnlaceImagen:calc(var(--anchoArticle)*0.9);
+    --altoEnlaceImagen:calc(var(--anchoEnlaceImagen)*0.5);
+}
+
+article {
+    margin: auto;
+    width: var(--anchoArticle);
+}
+
+.enlaceimagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-image: url(./Imagenes/foto.png);
+    width: var(--anchoEnlaceImagen);
+    height: var(--altoEnlaceImagen);
+}
+
+.bloquetexto {
+    text-align: center;
+    vertical-align: auto;
+    visibility: hidden;
+    opacity: 0.8;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: 'Righteous';
+}
+
+.enlaceimagen:hover .bloquetexto{
+    transition: 0.4s;
+    visibility: visible;
+    opacity: 0.8;
+}
+
+p {
+    text-indent: 1rem;
+    text-align: justify;
+}
+

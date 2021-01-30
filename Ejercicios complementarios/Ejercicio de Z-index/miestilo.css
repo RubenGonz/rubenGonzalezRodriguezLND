@@ -1,0 +1,68 @@
+.contenedor {
+    margin:auto;
+    position: relative;
+    width: 600px;
+    height: 700px;
+    background-color: gray;
+    border: 10px outset #dddddd;
+}
+
+.caja {
+    width: 200px;
+    height: 300px;
+    opacity: 0.8;
+    border-radius: 60%;
+    box-shadow: 5px 5px 10px inset;
+
+    counter-increment: numeroDeCaja;
+}
+
+.caja:nth-of-type(1) {
+    position: absolute;
+    top: 70px;
+    left: 80px;
+    background-color: #CEAF72 ;
+}
+
+.caja:nth-of-type(2) {
+    position: absolute;
+    top: 140px;
+    left: 160px;
+    background-color: #AF767B;
+}
+
+.caja:nth-of-type(3) {
+    position: absolute;
+    top: 210px;
+    left: 240px;
+    background-color: #93A580;
+}
+
+.caja:nth-of-type(4) {
+    position: absolute;
+    top: 280px;
+    left: 320px;
+    background-color:#8196AD ;
+}
+
+.caja:hover {
+    opacity: 0.93;
+}
+
+.caja:hover ~ .caja {
+    visibility: hidden;
+}
+
+h1 {
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: -5px;
+    font-style: oblique;
+    text-shadow: 5px 5px 3px#494848, 1px 0px 5px yellow, 0px 1px 5px yellow, -1px 0px 5px yellow, 0px -1px 5px yellow;
+}
+
+h1::before {
+    content: "-Caja:" counter(numeroDeCaja, upper-Roman) "-";
+}

@@ -1,0 +1,14 @@
+tricks css
+
+- fondo de la imagen cuando haces el opacity hacer que se vea gameworld en azul
+- Fondo de la cabecera gradiente combinado con blanco
+- fondo de la cabecera cuando le hagas hover remarcar los bordes de blanco sobre el seleccionado
+- Uso de variables de tamaño para ajustar el contenido
+- Tres botones esquina superior de la foto para indicar opciones.
+- Obtener enlace de compra deajo de la foto o con las tres opciones de compra
+- Usar 'tarjetas' para la visualizacion de una compra
+- Que al hacer hover sobresalte la tarjeta haciendose mas grande
+- Añadir una parte para loguearse 
+- Buscar si se puede hacer un gradinte usando una imagen despues un color y despues otra 
+imagen para la patalla de inicio que no lo cubre todo y donde estaria el login
+- Borde circular a los enlaces (unica y exclusivamente border)
