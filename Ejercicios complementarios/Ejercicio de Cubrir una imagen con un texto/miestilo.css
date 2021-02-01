@@ -11,34 +11,37 @@ article {
 
 .enlaceimagen {
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin: auto;
     background-image: url(./Imagenes/foto.png);
+    background-size: cover;
     width: var(--anchoEnlaceImagen);
     height: var(--altoEnlaceImagen);
 }
 
 .bloquetexto {
-    text-align: center;
-    vertical-align: auto;
-    visibility: hidden;
-    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
     background-color: black;
     width: 100%;
     height: 100%;
     color: white;
+    font-size: 2rem;
     font-family: 'Righteous';
+    transition: all 0.4s;
 }
 
 .enlaceimagen:hover .bloquetexto{
-    transition: 0.4s;
-    visibility: visible;
     opacity: 0.8;
+}
+
+.enlaceimagen:hover{
+    background-position: center;
+    background-size: 120% 120%;
 }
 
 p {
     text-indent: 1rem;
     text-align: justify;
 }
-
