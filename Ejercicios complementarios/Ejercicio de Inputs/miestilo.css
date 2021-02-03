@@ -1,16 +1,5 @@
-/*
-    el formulario como mínimo un width de: 635px;
-    color usado en los input de texto para la sombra: #6D8F79;
-    Los div con clase flex tienen un width mínimo de 600px
-    Poner las etiquetas (label) en negrita
-
-    Observar que si el input submit si se trata 
-    como elemento de bloque se puede centrar mediante margin: auto;
-*/
-
 body {
-    background-color: #E0DFDF;
-    
+    background-color: #E0DFDF; 
 }
 
 hr {
@@ -19,28 +8,33 @@ hr {
 
 form {
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
+    flex-flow: row wrap;
     background-color: #C7C6C6;
     border: 1px solid white;
-    font-weight: bold;
+    box-shadow: 5px 5px 3px gray;
+    min-width: 635px;
+}
+
+div.flex {
+    display: flex;
+    flex: 1 0 500px;
+}
+
+form > * {
+    padding: 1rem;
 }
 
 label {
     font-weight: bold;
 }
 
-form > div {
-    padding: 1rem;
-}
-
 input[type="text"] {
     color: #568968;
     margin-left: 1rem;
-    flex: 1 0 45%;
+    flex: 1 0 10%;
 }
 
 input[type="submit"] {
-    display: inline-block;
-    color: blue;
+    display: block;
+    margin: auto;
 }
