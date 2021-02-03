@@ -1,0 +1,20 @@
+body {
+    background-color: pink;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content:space-between ;
+}
+
+.caja {
+    border: 2px solid white;
+    width: 35%;
+}
+
+.caja:nth-of-type(2n-1) {
+    background-color: #6E9EB8;
+}
+
+.caja:nth-of-type(2n) {
+    background-color: #9DC8A0;
+}

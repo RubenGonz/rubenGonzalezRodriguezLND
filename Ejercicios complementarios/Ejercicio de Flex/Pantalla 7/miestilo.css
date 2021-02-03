@@ -1,0 +1,27 @@
+body {
+    background-color: pink;
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+}
+
+.caja {
+    display: flex;
+    border: 2px solid white;
+}
+
+.caja:nth-of-type(2n-1) {
+    background-color: #6E9EB8;
+}
+
+.caja:nth-of-type(2n) {
+    background-color: #9DC8A0;
+}
+
+.caja:nth-of-type(4), .caja:nth-of-type(2) {
+    align-self: center;
+}
+
+.caja:nth-of-type(5), .caja:nth-of-type(1) {
+    align-self: flex-start;
+}
