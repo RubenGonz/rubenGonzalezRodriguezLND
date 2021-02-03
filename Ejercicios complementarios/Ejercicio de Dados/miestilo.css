@@ -67,19 +67,25 @@
 .cinco {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.cinco .circulo:nth-of-type(2n - 1) {
+.cinco .circulo:nth-of-type(1) {
     margin-right: 50%;
 }
 
 .cinco .circulo:nth-of-type(3) {
+    margin-right: 33%;
+    margin-left: 33%;
     align-self: center;
 }
 
 .cinco .circulo:nth-of-type(n + 4) {
     align-self: flex-end;
+}
+
+.cinco .circulo:nth-of-type(5) {
+    margin-left: auto;
 }
 
 
