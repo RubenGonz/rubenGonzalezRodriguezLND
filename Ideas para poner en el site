@@ -13,5 +13,13 @@ tricks css
 imagen para la patalla de inicio que no lo cubre todo y donde estaria el login
 - Borde circular a los enlaces (unica y exclusivamente border)
 - Crecimiento de letra para las letras blancas de los enlaces de pagina
-- Anuncio a la derecha con borde invissible y vackground lineal blanco y avul en 
-movimiento
+- Anuncio a la derecha con borde invissible y vackground lineal blanco y avul en movimiento
+- Idea de valorar la pagina con un icono de emogi que tenga 5 emogis
+- Portada para Gamewolrd con pocas cosas y depues todo el contenido
+- Probar con un gradiente de 45º en los enlace a paginas
+- Poner la parte fija de la cabecera solo como el texto con bordes curvos a modo de pestaña.
+- A los precios finales ponerles un poco mas de tamaño y en negrita.
+- Poner la parte de ver mas informacion del articulo como esta y cuando hagas hover 
+poner el fondo y la letra al revez para que haga el efecto de marcado.
+- Buscar otra imagen para el fondo del site.
+- Utilizar un estilo de css para todas las paginas y ademas otro para cada pagina en especifico.

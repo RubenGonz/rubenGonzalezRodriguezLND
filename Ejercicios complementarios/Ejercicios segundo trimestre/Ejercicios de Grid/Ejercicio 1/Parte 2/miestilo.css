@@ -1,0 +1,46 @@
+body {
+    display: grid;
+    grid-template: 
+    "Navbar     Navbar    Navbar" 50px
+    "Section3      .      Section1" 100px
+    "Section3   Section2  Section2" 100px
+    "Footer     Footer    Footer" 50px
+    / 200px 200px 200px;
+    grid-gap: 3px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 5px;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+
+div:nth-of-type(1) {
+    background-color: #3AAF61;
+    grid-area: Navbar;
+}
+
+div:nth-of-type(2) {
+    background-color: #EC3A3E;
+    grid-area: Section1;
+}
+
+div:nth-of-type(3) {
+    background-color: #FF9646;
+    grid-area: Section2;
+}
+
+div:nth-of-type(4) {
+    background-color: #F39CAD;
+    grid-area: Section3;
+}
+
+div:nth-of-type(5) {
+    background-color: #008FF6;
+    grid-area: Footer;
+}

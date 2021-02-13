@@ -1,0 +1,54 @@
+.grid {
+    display: grid;
+    grid-template: 
+    "Header   Header"    100px
+    "Aside    Article"  175px
+    "Footer   Footer"    100px
+    / 25%   1fr;
+    grid-gap: 5px;
+}
+
+header, aside, footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #0047BB;
+    color: white;
+}
+
+header {
+    grid-area: Header;
+}
+
+aside {
+    grid-area: Aside;
+}
+
+article {
+    grid-area: Article;
+    padding: 10px;
+    background-color: #7E775C;
+    color: #FFD57F;
+}
+
+p {
+    text-indent: 25px;
+}
+
+footer {
+    grid-area: Footer;
+}
+
+@media all and (max-width: 800px) {
+    .grid {
+        display: grid;
+        grid-template: 
+        "Header"    100px
+        "Aside"     100px
+        "Article"   150px
+        "Footer"    100px
+        / 1fr;
+        grid-gap: 5px;
+    }
+}
