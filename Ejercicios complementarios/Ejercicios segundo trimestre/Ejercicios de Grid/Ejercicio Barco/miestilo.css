@@ -1,0 +1,62 @@
+:root{
+    --sizemargin: 2rem;
+    --sizepadding: 2rem;
+    --articlewidthmin: 300px;
+    --articlewidthmax: 1800px;
+}
+
+article {
+    min-width: var(--articlewidthmin);
+    max-width: var(--articlewidthmax);
+    margin: var(--sizemargin);
+    padding: var(--sizepadding);
+    background-color: #F2F2F2;
+    margin: auto;
+    box-shadow: 5px 5px 5px gray;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows:25% 25% 25% 25%;
+}
+
+img {
+    grid-area: 1/1 / -1/-1;
+
+    width: 100%;
+}
+
+.etiqueta {
+    position: absolute;
+    top: -17.5px;
+    left: 15px;
+
+    padding: 0.5rem;
+    background-color: black;
+    color: yellow;
+}
+
+@media all and (min-width:1000px) {
+
+    .entradilla {
+        grid-area: 3/1 / -1/3;
+        position: relative;
+    
+        padding: 0.5rem;
+        background: rgba(0,0,0,0.5);
+        color: white;
+    }
+}
+
+@media all and (max-width:1000px) {
+
+    .entradilla {
+        grid-area: 4/1 / -1/-1;
+        position: relative;
+    
+        padding: 0.5rem;
+        background: rgba(120,120,120);
+        color: white;
+    }
+}
