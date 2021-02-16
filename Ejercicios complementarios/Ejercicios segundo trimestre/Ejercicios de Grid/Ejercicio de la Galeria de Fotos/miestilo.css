@@ -1,13 +1,19 @@
-/*
-    colores #C7C7C7  #D0CDCD  y los estandar
-    el padding de las fotos en porcentual
-    el ancho máximo de cada foto: 250px
-    el ancho máximo de galería: 1700px   el mínimo 350px
-*/
-
 .galeria {
     display: grid;
 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 300px;
+
+    max-width: 1700px;
+    min-width: 350px;
     background-color: #D0CDCD;
     border: 5px inset;
+    justify-items: center;
+    align-items: center;
+}
+
+img {
+    max-width: 250px;
+    border: 7px solid white;
+    box-shadow: 5px 5px 5px gray;
 }
