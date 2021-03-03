@@ -1,0 +1,3 @@
+El fallo se produce porque en el tdt se especifica que en 
+los libros tiene que haber obligatoriamente una unica 
+etiqueta autor.

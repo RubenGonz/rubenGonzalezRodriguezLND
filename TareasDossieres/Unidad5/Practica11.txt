@@ -1,0 +1,3 @@
+El segundo xml no es valido por contener #PCDATA y la
+etiqueta nombre a la vez, cuando solo deberia poder ir una 
+de ellas.

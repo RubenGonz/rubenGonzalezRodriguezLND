@@ -1,0 +1,5 @@
+1) Se representarán las clases, donde debe existir al menos una clase que se deberá componer de al
+menos un profesor, y al menos un alumno o alumna. Por cada profesor se registrará su nombre y
+puede registrarse sus apellidos. por cada alumno o alumna se registrarán tanto nombre como
+apellidos. por cada clase se establece que por defecto hay pizarra pudiendo no haberla
+

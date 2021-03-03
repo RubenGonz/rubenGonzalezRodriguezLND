@@ -1,0 +1,12 @@
+Hay un elemento pelicula con un elemento titulo, 
+uno o mas elementos writter, uno o mas elementos productor,
+uno o mas elementos director, ninguno o muchos elementos actor
+y puede o no tener comentarios.
+
+El elemento pelicula tiene los atributos tipo, que esta limitado por 
+drama, comedy, adventure, sci-fi, mistery, horror, romance, documentary
+con el valor por defecto "drama", el atributo clasificacion que
+tambien esta limitado por G, PG, PG-13, R, X con el valor 
+por defecto "PG", el atribujo review quetambien esta limitado 
+por 1, 2, 3, 4, 5 con el valor por defecto "3" y el año que es
+opcional y es un CDATA.

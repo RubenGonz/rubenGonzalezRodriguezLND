@@ -1,0 +1,5 @@
+Estamos hablando de atributos de la clase curso donde tenemos 
+director que tiene que estar si o si y es un CDATA, un horario 
+que esta limitado por mañana, tarde o noche como atributo opcional,
+una matricula con la opcion de ordinaria o extraordinaria con 
+el valor por defecto "ordinaria" y tasas que tendra un valor de 53€.

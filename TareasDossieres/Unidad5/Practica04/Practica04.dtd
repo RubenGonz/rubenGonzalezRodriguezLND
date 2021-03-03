@@ -1,0 +1,9 @@
+<!DOCTYPE libreria[
+
+    <!ELEMENT libreria (libro+)>
+    <!ELEMENT libro (titulo, autor, editorial)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT editorial (#PCDATA)>	
+
+]>

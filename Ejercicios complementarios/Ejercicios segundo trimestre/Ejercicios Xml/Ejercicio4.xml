@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<!DOCTYPE Ejercicio4[
+
+    <!ELEMENT Concesionario (Modelo+)>
+    <!ELEMENT Modelo (#PCDATA | Motor | Potencia | #PCDATA | Consumo_medio))*>
+    <!ELEMENT Motor (#PCDATA)>
+    <!ELEMENT Potencia (#PCDATA)>
+    <!ELEMENT Consumo_medio (#PCDATA)>
+
+    <!ATTLIST Modelo id ID #REQUIRED>
+
+]>

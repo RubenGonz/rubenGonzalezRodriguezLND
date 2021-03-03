@@ -1,0 +1,30 @@
+1. Estamos definiendo el elemento libro que tiene un 
+autor y una editorial.
+
+2. Estamos definiendo el elemento autor que contiene 
+texto o EMPTY.
+
+3. Estamos definiendo el elemento pelicula que tiene 
+como minimo uno de los elementos actor, actriz o director
+u que ademas puede haber tantos como se quiera de cada uno 
+en el orden que se quiera.
+
+4. Estamos definiendo el elemento pelicula que puede 
+tener o no tantos elementos actor o actriz como sea necesario 
+seguido de un director obligatoriamente y ademas puede 
+tener o no un elemento maquilaje.
+
+5. Estamos definiendo el elemento pelicula que tiene 
+como minimo uno de los elementos actor, actriz o director
+u que ademas puede haber tantos como se quiera de cada uno 
+en el orden que se quiera.
+
+6. Estamos definiendo el elemento pelicula que tiene un titulo,
+un genero y despues puede tener o no tantos elementos actor, 
+actriz o narrador como sea necesario.
+
+7. Estamos definiendo el elemento ficha que tiene un elemento 
+nombre como minimo, un apellido como minimo, nunguna direccion o 
+muchas, ninguna foto o una y por ultimo tenemos la opcion de no
+poner un telefono fijo o poner muchos o por otro lado la opcion 
+de poner un telefono movil o poner muchos.

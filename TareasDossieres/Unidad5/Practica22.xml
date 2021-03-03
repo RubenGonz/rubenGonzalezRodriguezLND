@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+    <!DOCTYPE Mensajeria[
+
+    <!ELEMENT Mensajeria (Mensajes+)>
+    <!ELEMENT Mensajes (Autor+, Destinatario+, Asunto)>
+    <!ELEMENT Autor (#PCDATA)>
+    <!ELEMENT Destinatario (#PCDATA)>
+    <!ELEMENT Asunto (#PCDATA)>
+
+    <!ENTITY yo "Ruben Gonzalez Rodriguez">
+    <!ENTITY curso "Primero de Administración de Sistemas Informáticos en Red">
+]>
+
+<Mensajeria>
+    <Mensajes>
+        <Autor>Persona 1</Autor>
+        <Destinatario>Persona 2</Destinatario>
+        <Asunto>Asunto 1...|...&yo;...|...&curso;</Asunto>
+    </Mensajes>
+    <Mensajes>
+        <Autor>Persona 3</Autor>
+        <Destinatario>Persona 4</Destinatario>
+        <Asunto>Asunto 2...|...&yo;...|...&curso;</Asunto>
+    </Mensajes>
+    <Mensajes>
+        <Autor>Persona 5</Autor>
+        <Destinatario>Persona 6</Destinatario>
+        <Asunto>Asunto 3...|...&yo;...|...&curso;</Asunto>
+    </Mensajes>
+</Mensajeria>

@@ -1,0 +1,6 @@
+1. Seria valido y podria sobrar los elementos AAA.
+
+2. Si que seria calido.
+
+3. Este xml no es valido por que hay dos elemntos AAA y 
+solo se permite que haya o ninguno o uno.

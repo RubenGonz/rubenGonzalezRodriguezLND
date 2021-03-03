@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+    <!DOCTYPE libreria[
+
+		<!ELEMENT libreria (libro+)>
+		<!ELEMENT libro (titulo, autor, editorial)>
+		<!ELEMENT titulo (#PCDATA)>
+		<!ELEMENT autor (#PCDATA)>
+        <!ELEMENT editorial (#PCDATA)>
+		<!ATTLIST libro categoria CDATA #REQUIRED>
+
+	]>
+
+<libreria>
+	<libro categoria="cocina">
+		<titulo>Lorem ipsum, dolor</titulo>
+		<autor>Lorem ipsum, dolor</autor>
+        <editorial>Lorem ipsum, dolor</editorial>
+	</libro>
+	<libro categoria="novela">
+		<titulo>Lorem ipsum, dolor</titulo>
+		<autor>Lorem ipsum, dolor</autor>
+        <editorial>Lorem ipsum, dolor</editorial>
+	</libro>
+	<libro categoria="programacion">
+		<titulo>Lorem ipsum, dolor</titulo>
+		<autor>Lorem ipsum, dolor</autor>
+        <editorial>Lorem ipsum, dolor</editorial>
+	</libro>
+	<libro categoria="programacion">
+		<titulo>Lorem ipsum, dolor</titulo>
+		<autor>Lorem ipsum, dolor</autor>
+        <editorial>Lorem ipsum, dolor</editorial>
+	</libro>
+</libreria>
+
+ 

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+    <!DOCTYPE libreria SYSTEM "Practica04.dtd">
+
+<libreria>
+	<libro>
+		<titulo>Don Quijote</titulo>
+		<autor>Miguel de Cervantes</autor>
+        <editorial>La Mancha</editorial>
+	</libro>
+	<libro>
+		<titulo>La vida es sueño</titulo>
+		<autor>Calderon de la Barca</autor>
+        <editorial>Mil Editoriales</editorial>
+	</libro>
+</libreria>

@@ -1,0 +1,12 @@
+<!DOCTYPE Agenda[
+
+    <!ELEMENT Agenda (Persona+)>
+    <!ELEMENT Persona (Nombre+, Apellido+, Email?, Oficina?, (Telefono | Movil))>
+    <!ELEMENT Nombre (#PCDATA)>
+    <!ELEMENT Apellido (#PCDATA)>
+    <!ELEMENT Email (#PCDATA)>
+    <!ELEMENT Oficina (#PCDATA)>
+    <!ELEMENT Telefono (#PCDATA)>
+    <!ELEMENT Movil (#PCDATA)>
+
+]>

@@ -1,0 +1,9 @@
+1. No es valido por faltarle el AtribC.
+
+2. Es valido.
+
+3. Es valido.
+
+4. No es valido porque NMTOKEN no permite coma.
+
+5. No es valido porque NMTOKEN no permite espacios en blanco.

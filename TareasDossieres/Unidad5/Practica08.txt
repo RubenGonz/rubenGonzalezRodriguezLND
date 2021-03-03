@@ -1,0 +1,2 @@
+El segundo xml no es valido por no contener la 
+etiqueta hermano y ademas tener dos nombres.

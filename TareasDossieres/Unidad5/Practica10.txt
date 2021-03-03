@@ -1,0 +1,2 @@
+El tercer y cuarto xml no son validos por no contar
+ninguno con la etiqueta nombre o tener mas de un DNI.

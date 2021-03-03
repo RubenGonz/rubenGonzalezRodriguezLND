@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<!DOCTYPE Ejercicio23[
+
+    <!ENTITY % Contacto "Direccion, Telefono">
+
+    <!ELEMENT Ejercicio23 (Alumno+, Centro)>
+    <!ELEMENT Alumno (Nombre, %Contacto;)>
+    <!ELEMENT Centro (Denominacion, %Contacto;)>
+    <!ELEMENT Nombre (#PCDATA)>
+    <!ELEMENT Denominacion (#PCDATA)>
+    <!ELEMENT Direccion (#PCDATA)>
+    <!ELEMENT Telefono (#PCDATA)>
+
+]>
+
+<Ejercicio23>
+    <Alumno>
+        <Nombre>Lorem ipsum</Nombre>
+        <Direccion>Lorem ipsum</Direccion>
+        <Telefono>Lorem ipsum</Telefono>
+    </Alumno>
+    <Alumno>
+        <Nombre>Lorem ipsum</Nombre>
+        <Direccion>Lorem ipsum</Direccion>
+        <Telefono>Lorem ipsum</Telefono>
+    </Alumno>
+    <Centro>
+        <Denominacion>Lorem ipsum</Denominacion>
+        <Direccion>Lorem ipsum</Direccion>
+        <Telefono>Lorem ipsum</Telefono>
+    </Centro>
+</Ejercicio23>

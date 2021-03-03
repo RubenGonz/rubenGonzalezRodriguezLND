@@ -1,0 +1,3 @@
+El segundo y el cuarto seguirian siendo erroneos por 
+contenerun #PCDATA cuando deberia contener o la etiqueta 
+Dni o la etiqueta nombre.
