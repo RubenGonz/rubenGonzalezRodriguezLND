@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<!DOCTYPE Cursos[
+
+    <!ENTITY nn "Juan Luís De Todos Los Santos Ramón">
+
+    <!ELEMENT Cursos (Curso+, Alumno+, Profesor+, Profesor_curso+)+>
+    <!ELEMENT Curso (#PCDATA)>
+    <!ELEMENT Alumno (Nombre+, Apellido+)>
+    <!ELEMENT Profesor (Nombre+, Apellido+)>
+    <!ELEMENT Nombre (#PCDATA)>
+    <!ELEMENT Apellido (#PCDATA)>
+    <!ELEMENT Profesor_curso EMPTY>
+
+    <!ATTLIST Alumno id_alumno ID #REQUIRED>
+    <!ATTLIST Profesor id_profesor ID #REQUIRED>
+    <!ATTLIST Curso id_curso ID #REQUIRED>
+    <!ATTLIST Profesor_curso refCurso IDREF #REQUIRED>
+    <!ATTLIST Profesor_curso refProfesor IDREF #REQUIRED>
+    <!ATTLIST Profesor_curso anyo CDATA #IMPLIED>
+
+]>
+
+<Cursos>
+
+    <Curso id_curso="Curso1">Lorem, ipsum.</Curso>
+    <Alumno id_alumno="Alumno1">
+        <Nombre>Lorem, ipsum.</Nombre>
+        <Apellido>Lorem, ipsum.</Apellido>
+    </Alumno>
+    <Profesor id_profesor="Profesor1">
+        <Nombre>Lorem, ipsum.</Nombre>
+        <Apellido>Lorem, ipsum.</Apellido>
+    </Profesor>
+    <Profesor_curso refCurso="Curso1" refProfesor="Profesor1" anyo="2020"/>
+
+    <Curso id_curso="Curso2">Lorem, ipsum.</Curso>
+    <Alumno id_alumno="Alumno2">
+        <Nombre>Lorem, ipsum.</Nombre>
+        <Apellido>Lorem, ipsum.</Apellido>
+    </Alumno>
+    <Profesor id_profesor="Profesor2">
+        <Nombre>Lorem, ipsum.</Nombre>
+        <Apellido>Lorem, ipsum.</Apellido>
+    </Profesor>
+    <Profesor_curso refCurso="Curso2" refProfesor="Profesor2" anyo="2020"/>
+
+    <Curso id_curso="Curso3">Lorem, ipsum.</Curso>
+    <Alumno id_alumno="Alumno3">
+        <Nombre>Lorem, ipsum.</Nombre>
+        <Apellido>Lorem, ipsum.</Apellido>
+    </Alumno>
+    <Profesor id_profesor="Profesor3">
+        <Nombre>Lorem, ipsum.</Nombre>
+        <Apellido>Lorem, ipsum.</Apellido>
+    </Profesor>
+    <Profesor_curso refCurso="Curso3" refProfesor="Profesor3" anyo="2020"/>
+    
+</Cursos>
