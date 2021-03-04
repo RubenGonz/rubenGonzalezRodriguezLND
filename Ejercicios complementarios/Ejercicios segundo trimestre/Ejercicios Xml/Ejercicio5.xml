@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<!DOCTYPE Personas[
+
+    <!ELEMENT Personas (Persona+)>
+    <!ELEMENT Persona (Nombre+, Apellido+, Direccion+)>
+    <!ELEMENT Nombre (#PCDATA)>
+    <!ELEMENT Apellido (#PCDATA)>
+    <!ELEMENT Direccion (Calle, Poblacion, Provincia, Cod_postal?)>
+    <!ELEMENT Calle (#PCDATA)>
+    <!ELEMENT Poblacion (#PCDATA)>
+    <!ELEMENT Provincia (#PCDATA)>
+    <!ELEMENT Cod_postal (#PCDATA)>
+
+    <!ATTLIST Persona Fecha_nac (Dia | Mes | Año) #IMPLIED>
+    <!ATTLIST Persona Sexo (Varon | Mujer | varon | mujer) #REQUIRED>
+
+]>
+
+<Personas>
+    <Persona Sexo="Varon" Fecha_nac="Dia">
+        <Nombre>Lorem Ipsum</Nombre>
+        <Apellido>Lorem Ipsum</Apellido>
+        <Direccion>
+            <Calle>Lorem Ipsum</Calle>
+            <Poblacion>Lorem Ipsum</Poblacion>
+            <Provincia>Lorem Ipsum</Provincia>
+        </Direccion>
+    </Persona>
+    <Persona Sexo="Mujer">
+        <Nombre>Lorem Ipsum</Nombre>
+        <Apellido>Lorem Ipsum</Apellido>
+        <Direccion>
+            <Calle>Lorem Ipsum</Calle>
+            <Poblacion>Lorem Ipsum</Poblacion>
+            <Provincia>Lorem Ipsum</Provincia>
+        </Direccion>
+    </Persona>
+    <Persona Sexo="varon">
+        <Nombre>Lorem Ipsum</Nombre>
+        <Apellido>Lorem Ipsum</Apellido>
+        <Direccion>
+            <Calle>Lorem Ipsum</Calle>
+            <Poblacion>Lorem Ipsum</Poblacion>
+            <Provincia>Lorem Ipsum</Provincia>
+        </Direccion>
+    </Persona>
+</Personas>

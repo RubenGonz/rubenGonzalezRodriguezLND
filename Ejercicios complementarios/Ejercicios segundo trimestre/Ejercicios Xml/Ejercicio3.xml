@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<!DOCTYPE Banco[
+
+    <!ELEMENT Banco (Usuario+)>
+    <!ELEMENT Usuario (Cliente, Cuenta, Cuenta_cliente)>
+    <!ELEMENT Cliente (Nombre+, Apellido+)>
+    <!ELEMENT Cuenta (Saldo)>
+    <!ELEMENT Cuenta_cliente EMPTY>
+
+    <!ELEMENT Nombre (#PCDATA)>
+    <!ELEMENT Apellido (#PCDATA)>
+    <!ELEMENT Saldo (#PCDATA)>
+
+    <!ATTLIST Cliente Id ID #REQUIRED>
+    <!ATTLIST Cuenta Id ID #REQUIRED>
+    <!ATTLIST Cuenta Interes CDATA #REQUIRED>
+    <!ATTLIST Cuenta_cliente Id_cliente IDREF #REQUIRED>
+    <!ATTLIST Cuenta_cliente Id_cuenta IDREF #REQUIRED>
+
+]>
+
+<Banco>
+    <Usuario>
+        <Cliente Id="Id_1">
+            <Nombre>Lorem Ipsum</Nombre>
+            <Apellido>Lorem Ipsum</Apellido>
+        </Cliente>
+        <Cuenta Id="Id_101" Interes="0.8%">
+            <Saldo>Lorem Ipsum</Saldo>
+        </Cuenta>
+        <Cuenta_cliente Id_cliente="Id_1" Id_cuenta="Id_101"/>
+    </Usuario>
+    <Usuario>
+        <Cliente Id="Id_2">
+            <Nombre>Lorem Ipsum</Nombre>
+            <Apellido>Lorem Ipsum</Apellido>
+        </Cliente>
+        <Cuenta Id="Id_102" Interes="0.6%">
+            <Saldo>Lorem Ipsum</Saldo>
+        </Cuenta>
+        <Cuenta_cliente Id_cliente="Id_2" Id_cuenta="Id_102"/>
+    </Usuario>
+    <Usuario>
+        <Cliente Id="Id_3">
+            <Nombre>Lorem Ipsum</Nombre>
+            <Apellido>Lorem Ipsum</Apellido>
+        </Cliente>
+        <Cuenta Id="Id_103" Interes="0.5%">
+            <Saldo>Lorem Ipsum</Saldo>
+        </Cuenta>
+        <Cuenta_cliente Id_cliente="Id_3" Id_cuenta="Id_103"/>
+    </Usuario>
+</Banco>

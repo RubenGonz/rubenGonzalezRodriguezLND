@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<!DOCTYPE Inmobiliaria[
+
+    <!ELEMENT Inmobiliaria (Casa+)>
+    <!ELEMENT Casa (Direccion, Propietario*, Precio?)>
+    <!ELEMENT Direccion (#PCDATA | Descripcion)*>
+    <!ELEMENT Propietario (#PCDATA)>
+    <!ELEMENT Precio (#PCDATA)>
+    <!ELEMENT Descripcion (#PCDATA)>
+
+    <!ATTLIST Casa Metros CDATA #REQUIRED>
+
+]>
+
+<Inmobiliaria>
+    <Casa Metros= "500">
+        <Direccion>Lorem Ipsum</Direccion>
+    </Casa>
+    <Casa Metros= "500">
+        <Direccion>Lorem Ipsum</Direccion>
+        <Propietario>Lorem Ipsum</Propietario>
+    </Casa>
+    <Casa Metros= "500">
+        <Direccion>Lorem Ipsum</Direccion>
+        <Precio>Lorem Ipsum</Precio>
+    </Casa>
+    <Casa Metros= "500">
+        <Direccion>
+            <Descripcion>Lorem Ipsum</Descripcion>
+        </Direccion>
+        <Propietario>Lorem Ipsum</Propietario>
+        <Precio>Lorem Ipsum</Precio>
+    </Casa>
+</Inmobiliaria>
