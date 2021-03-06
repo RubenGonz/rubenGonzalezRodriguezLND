@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<!DOCTYPE Entrenamientos[
+
+    <!ELEMENT Entrenamientos (Cliente+, Sesion*)+>
+    <!ELEMENT Cliente (Nombre+, Apellido1, Apellido2?)>
+    <!ELEMENT Sesion (Duracion, Distancia, Localizacion, Comentario?)>
+    
+    <!ELEMENT Nombre (#PCDATA)>
+    <!ELEMENT Apellido1 (#PCDATA)>
+    <!ELEMENT Apellido2 (#PCDATA)>
+    <!ELEMENT Duracion (#PCDATA)>
+    <!ELEMENT Distancia (#PCDATA)>
+    <!ELEMENT Localizacion (#PCDATA)>
+    <!ELEMENT Comentario (#PCDATA)>
+
+    <!ATTLIST Cliente id_cliente ID #REQUIRED>
+    <!ATTLIST Sesion id_cliente IDREF #REQUIRED>
+    <!ATTLIST Sesion actividad (running | natacion | bicicleta) "running">
+    <!ATTLIST Sesion pulsaciones CDATA #IMPLIED>
+    <!ATTLIST Duracion unidad (minutos | segundos | horas) "minutos">
+    <!ATTLIST Distancia unidad (kilometros | millas | vueltas) "kilometros">
+
+]>
+
+<Entrenamientos>
+    <Cliente id_cliente="id_cliente1">
+        <Nombre>Lorem, ipsum.</Nombre>
+        <Apellido1>Lorem, ipsum.</Apellido1>
+        <Apellido2>Lorem, ipsum.</Apellido2>
+    </Cliente>
+    <Sesion id_cliente="id_cliente1" actividad="running" pulsaciones="120">
+        <Duracion unidad="horas">
+            Lorem, ipsum.
+        </Duracion>
+        <Distancia unidad="millas">
+            Lorem, ipsum.
+        </Distancia>
+        <Localizacion>Lorem, ipsum.</Localizacion>
+        <Comentario>Lorem, ipsum.</Comentario>
+    </Sesion>
+</Entrenamientos>

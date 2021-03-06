@@ -12,13 +12,15 @@
     <!ELEMENT Provincia (#PCDATA)>
     <!ELEMENT Cod_postal (#PCDATA)>
 
-    <!ATTLIST Persona Fecha_nac (Dia | Mes | Año) #IMPLIED>
+    <!ATTLIST Persona Fecha_nac_dia CDATA #IMPLIED>
+    <!ATTLIST Persona Fecha_nac_mes CDATA #IMPLIED>
+    <!ATTLIST Persona Fecha_nac_anyo CDATA #IMPLIED>
     <!ATTLIST Persona Sexo (Varon | Mujer | varon | mujer) #REQUIRED>
 
 ]>
 
 <Personas>
-    <Persona Sexo="Varon" Fecha_nac="Dia">
+    <Persona Sexo="Varon" Fecha_nac_dia="31" Fecha_nac_mes="05" Fecha_nac_anyo="2000">
         <Nombre>Lorem Ipsum</Nombre>
         <Apellido>Lorem Ipsum</Apellido>
         <Direccion>
