@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<coche xmlns="http://www.misitio.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.misitio.com Practica08.xsd">
+
+    <marca>Ford</marca>
+    <modelo>Mustang</modelo>
+    <puertas>5</puertas>
+    <color>rojo</color>
+
+</coche>

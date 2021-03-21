@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<Practica10 xmlns="http://www.misitio.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.misitio.com Practica10.xsd">
+
+<pasaje Asiento="18D" Ventanilla="false" Precio="98.16" Moneda="dolares"/>
+
+</Practica10>
+
+<!-- 
+    Da error al quitar el atributo asiento debido a que es un atgributo obligatorio
+    Ventanilla y precio no dan problemas porque tienen un valor por defecto.
+-->

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<mensaje xmlns="http://www.misitio.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.misitio.com Practica01.xsd">
+
+    <remitente>Juan</remitente>
+    <destinatario>María</destinatario>
+    <asunto>Reunión:</asunto>
+    <cuerpo>Mañana a las 11:00 horas</cuerpo>
+
+</mensaje>

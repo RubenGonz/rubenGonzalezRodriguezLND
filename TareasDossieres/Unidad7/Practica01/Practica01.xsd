@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.misitio.com"
+xmlns="http://www.misitio.com" 
+elementFormDefault="qualified">
+
+    <xs:element name="mensaje">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="remitente" type="xs:string"/>
+                <xs:element name="destinatario" type="xs:string"/>
+                <xs:element name="asunto" type="xs:string"/>
+                <xs:element name="cuerpo" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+</xs:schema> 

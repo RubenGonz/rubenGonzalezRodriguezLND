@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.misitio.com"
+    xmlns="http://www.misitio.com" elementFormDefault="qualified">
+
+    <xs:element name="compra" type="remesa"/>
+
+    <xs:complexType name="datoscoche">
+        <xs:sequence>
+            <xs:element name="marca" type="xs:string"/>
+            <xs:element name="modelo" type="xs:string"/>
+            <xs:element name="puertas" type="xs:integer"/>
+            <xs:element name="color">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="blanco"/>
+                        <xs:enumeration value="gris"/>
+                        <xs:enumeration value="rojo"/>
+                        <xs:enumeration value="verde"/>
+                        <xs:enumeration value="azul"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="remesa">
+        <xs:complexContent>
+            <xs:extension base="datoscoche">
+                <xs:sequence>
+                    <xs:element name="numcoches" type="xs:integer"/>
+                    <xs:element name="nombrebarco" type="xs:string"/>
+                    <xs:element name="paisproductor" type="xs:string"/>
+                    <xs:element name="paiscomprador" type="xs:string"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+</xs:schema> 

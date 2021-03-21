@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<compra xmlns="http://www.misitio.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.misitio.com Practica09.xsd">
+
+    <marca>Toyota</marca>
+    <modelo>LandCruiser</modelo>
+    <puertas>3</puertas>
+    <color>gris</color>
+    <numcoches>100</numcoches>
+    <nombrebarco>SeaAdventurer</nombrebarco>
+    <paisproductor>Japon</paisproductor>
+    <paiscomprador>España</paiscomprador>
+
+</compra>

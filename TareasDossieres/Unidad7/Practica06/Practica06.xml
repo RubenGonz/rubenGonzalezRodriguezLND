@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<persona xmlns="http://www.misitio.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.misitio.com Practica06.xsd">
+
+    <nombre>Ruben</nombre>
+    <apellidos>Gonzalez Rodriguez</apellidos>
+    <edad>18</edad>
+    <fechanacimiento>2000-05-31</fechanacimiento>
+    <estadocivil>soltero</estadocivil>
+    <dni>12345678A</dni>
+
+</persona>

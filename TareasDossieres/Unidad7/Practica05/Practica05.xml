@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<persona xmlns="http://www.misitio.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.misitio.com Practica05.xsd">
+
+    <nombre>Ruben</nombre>
+    <apellidos>Gonzalez Rodriguez</apellidos>
+    <edad>18</edad>
+    <fechanacimiento>2000-05-31</fechanacimiento>
+    <estadocivil>soltero</estadocivil>
+
+</persona>
+
+<!-- 
+    Si colocamos otra palabra que no este en la lista apareceran los errores:
+
+    cvc-enumeration-valid: Value 'atleta' is not facet-valid with respect to enumeration '[soltero, casado, separado, divorciado, viudo]'. It must be a value from the enumeration.    
+    cvc-type.3.1.3: The value 'atleta' of element 'estadocivil' is not valid.
+-->

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<persona xmlns="http://www.misitio.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.misitio.com Practica03.xsd">
+
+    <nombre>Ruben</nombre>
+    <apellidos>Gonzalez Rodriguez</apellidos>
+    <edad>18</edad>
+    <fechanacimiento>2000-05-31</fechanacimiento>
+
+</persona>
+
+<!-- 
+    Si colocamos otra edad distinta a 18, que es el valor fijo sale este error:
+
+    cvc-elt.5.2.2.2.2: The value '20' of element 'edad' does not match the {value constraint} value '18'.
+-->
