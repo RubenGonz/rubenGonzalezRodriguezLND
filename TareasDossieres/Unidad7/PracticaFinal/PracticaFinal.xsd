@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.misitio.com"
+xmlns="http://www.misitio.com" 
+elementFormDefault="qualified">
+
+    <xs:element name="PracticaFinal">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ClinicaVeterinaria" type="tipoClinicaVeterinaria" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="tipoClinicaVeterinaria">
+        <xs:sequence>
+            <xs:element name="cliente" type="tipoPersona" minOccurs="0" />
+        </xs:sequence>
+        <xs:attribute name="codigo" type="xs:string" use="required" />
+    </xs:complexType>
+
+    <xs:complexType name="tipoPersona">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string" />
+            <xs:element name="apellido" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="animal" type="tipoAnimal" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoAnimal">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="perro"/>
+            <xs:enumeration value="gato"/>
+            <xs:enumeration value="reptil"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema> 

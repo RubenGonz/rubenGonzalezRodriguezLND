@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.misitio.com"
+    xmlns="http://www.misitio.com" elementFormDefault="qualified">
+
+    <xs:element name="boletin" type="tipoBoletin"/>
+
+    <xs:complexType name="tipoBoletin" mixed="true">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="apellidos" type="xs:string"/>
+            <xs:element name="nota" type="xs:positiveInteger"/>
+            <xs:element name="materia" type="xs:string"/>
+            <xs:element name="evaluacion" type="tipoEvaluacion"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoEvaluacion">
+        <xs:restriction base="xs:integer">
+            <xs:enumeration value="1"/>
+            <xs:enumeration value="2"/>
+            <xs:enumeration value="3"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema> 

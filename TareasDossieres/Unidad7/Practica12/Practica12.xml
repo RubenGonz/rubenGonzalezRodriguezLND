@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<boletin xmlns="http://www.misitio.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.misitio.com Practica12.xsd">
+
+    <nombre>Ruben</nombre>
+    <apellidos>Gonzalez Rodriguez</apellidos>
+    <nota>7</nota>
+    <materia>LND</materia>
+    <evaluacion>2</evaluacion>
+
+</boletin>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<persona xmlns="http://www.misitio.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.misitio.com Practica13.xsd">
+
+    <nombre>Ruben</nombre>
+    <apellido>Gonzalez Rodriguez</apellido>
+
+</persona>

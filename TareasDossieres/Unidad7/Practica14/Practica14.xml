@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<clinica xmlns="http://www.misitio.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.misitio.com Practica14.xsd">
+
+    <paciente>
+        <nombre>NombrePaciente1</nombre>
+        <apellido>ApellidoPaciente1</apellido>
+        <visitante>
+            <nombre>NombreVisitante1</nombre>
+            <apellido>ApellidoVisitante1</apellido>
+        </visitante>
+        <visitante>
+            <nombre>NombreVisitante2</nombre>
+            <apellido>ApellidoVisitante2</apellido>
+        </visitante>
+    </paciente>
+
+    <paciente>
+        <nombre>NombrePaciente2</nombre>
+        <apellido>ApellidoPaciente2</apellido>
+        <visitante>
+            <nombre>NombreVisitante3</nombre>
+            <apellido>ApellidoVisitante3</apellido>
+        </visitante>
+        <visitante>
+            <nombre>NombreVisitante4</nombre>
+            <apellido>ApellidoVisitante4</apellido>
+        </visitante>
+    </paciente>
+
+    <paciente>
+        <nombre>NombrePaciente3</nombre>
+        <apellido>ApellidoPaciente3</apellido>
+        <visitante>
+            <nombre>NombreVisitante5</nombre>
+            <apellido>ApellidoVisitante5</apellido>
+        </visitante>
+        <visitante>
+            <nombre>NombreVisitante6</nombre>
+            <apellido>ApellidoVisitante6</apellido>
+        </visitante>
+    </paciente>
+
+</clinica>

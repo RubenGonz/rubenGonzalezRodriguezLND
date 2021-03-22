@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.misitio.com"
+    xmlns="http://www.misitio.com" elementFormDefault="qualified">
+
+    <xs:element name="parrafo">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="idioma" type="xs:string" use="required"/>
+                    <xs:attribute name="codificacion" type="xs:string" use="optional"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    
+</xs:schema> 
