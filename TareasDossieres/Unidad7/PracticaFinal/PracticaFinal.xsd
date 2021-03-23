@@ -15,7 +15,7 @@ elementFormDefault="qualified">
 
     <xs:complexType name="tipoClinicaVeterinaria">
         <xs:sequence>
-            <xs:element name="cliente" type="tipoPersona" minOccurs="0" />
+            <xs:element name="cliente" type="tipoPersona" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
         <xs:attribute name="codigo" type="xs:string" use="required" />
     </xs:complexType>
@@ -28,11 +28,34 @@ elementFormDefault="qualified">
         </xs:sequence>
     </xs:complexType>
 
-    <xs:simpleType name="tipoAnimal">
+    <xs:complexType name="tipoAnimal">
+        <xs:choice>
+            <xs:element name="perro" type="CaracteristicasAnimal"/>
+            <xs:element name="gato" type="CaracteristicasAnimal"/>
+            <xs:element name="reptil" type="CaracteristicasAnimal"/>
+        </xs:choice>
+    </xs:complexType>
+
+    <xs:complexType name="CaracteristicasAnimal">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string" />
+            <xs:element name="edad" type="tipoEdad" />
+            <xs:element name="raza" type="xs:string" />
+            <xs:element name="sexo" type="tipoSexo" default="M" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoEdad">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="15" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoSexo">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="perro"/>
-            <xs:enumeration value="gato"/>
-            <xs:enumeration value="reptil"/>
+            <xs:enumeration value="M" />
+            <xs:enumeration value="H" />
         </xs:restriction>
     </xs:simpleType>
 

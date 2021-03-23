@@ -4,6 +4,47 @@
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:schemaLocation="http://www.misitio.com PracticaFinal.xsd">
 
-    
+    <ClinicaVeterinaria codigo="123456">
+        
+        <cliente>
+            <nombre>Ruben</nombre>
+            <apellido>Gonzalez Rodriguez</apellido>
+            <animal>
+                <gato>
+                    <nombre>Mora</nombre>
+                    <edad>13</edad>
+                    <raza>Callejero</raza>
+                    <sexo>H</sexo>
+                </gato>
+            </animal>
+        </cliente>
+
+        <cliente>
+            <nombre>Natalia</nombre>
+            <apellido>Hernandez Diaz</apellido>
+            <animal>
+                <perro>
+                    <nombre>Rudolf</nombre>
+                    <edad>7</edad>
+                    <raza>Golden retriever</raza>
+                    <sexo>M</sexo>
+                </perro>
+            </animal>
+        </cliente>
+
+        <cliente>
+            <nombre>Magali</nombre>
+            <apellido>Morales Rodriguez</apellido>
+            <animal>
+                <reptil>
+                    <nombre>Lisa</nombre>
+                    <edad>5</edad>
+                    <raza>Iguana</raza>
+                    <sexo>H</sexo>
+                </reptil>
+            </animal>
+        </cliente>
+
+    </ClinicaVeterinaria>
 
 </PracticaFinal>
