@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.misitio.com"
+    xmlns="http://www.misitio.com" elementFormDefault="qualified">
+
+    <xs:element name="Persona" type="tipoPersona"/>
+
+    <xs:complexType name="tipoPersona">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="apellido" type="xs:string" minOccurs="0" maxOccurs="2"/>
+            <xs:choice>
+                <xs:element name="edad" type="xs:positiveInteger"/>
+                <xs:element name="fechaNacimiento" type="xs:date"/>
+            </xs:choice>
+            <xs:element name="padres" type="tipoPadres" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoPadres">
+        <xs:choice>
+            <xs:group ref=""></xs:group>
+        </xs:choice>
+    </xs:complexType>
+
+    <xs:group name=""></xs:group>
+
+    <!-- 
+
+        Dentro de padres puede aparecer los siguientes elementos 
+        ( cada fila identifica los elementos que habría dentro de padres):
+
+     - madre, madre     
+     - padre, padre
+     - madre, padre
+     - padre, madre
+     - madre
+     - padre
+    
+    -->
+</xs:schema> 

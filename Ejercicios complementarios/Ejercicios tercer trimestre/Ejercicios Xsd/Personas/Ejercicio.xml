@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<Persona xmlns="http://www.misitio.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.misitio.com Ejercicio.xsd">
+
+    <nombre>Ruben</nombre>
+    <apellido>Gonzalez Rodriguez</apellido>
+    <edad>20</edad>
+    
+</Persona>
