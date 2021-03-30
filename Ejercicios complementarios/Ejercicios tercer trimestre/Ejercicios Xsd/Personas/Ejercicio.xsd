@@ -3,7 +3,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.misitio.com"
     xmlns="http://www.misitio.com" elementFormDefault="qualified">
 
-    <xs:element name="Persona" type="tipoPersona"/>
+    <xs:element name="Persona" type="tipoPersona" />
 
     <xs:complexType name="tipoPersona">
         <xs:sequence>
@@ -19,23 +19,23 @@
 
     <xs:complexType name="tipoPadres">
         <xs:choice>
-            <xs:group ref=""></xs:group>
+            <xs:group ref="grupoDosAntecesores" />
+            <xs:group ref="grupoUnAntecesor" />
         </xs:choice>
     </xs:complexType>
 
-    <xs:group name=""></xs:group>
+    <xs:group name="grupoDosAntecesores">
+        <xs:sequence>
+            <xs:group ref="grupoUnAntecesor" />
+            <xs:group ref="grupoUnAntecesor" />
+        </xs:sequence>
+    </xs:group>
 
-    <!-- 
+    <xs:group name="grupoUnAntecesor">
+        <xs:choice>
+            <xs:element name="padre" type="xs:string" />
+            <xs:element name="madre" type="xs:string" />
+        </xs:choice>
+    </xs:group>
 
-        Dentro de padres puede aparecer los siguientes elementos 
-        ( cada fila identifica los elementos que habría dentro de padres):
-
-     - madre, madre     
-     - padre, padre
-     - madre, padre
-     - padre, madre
-     - madre
-     - padre
-    
-    -->
 </xs:schema> 

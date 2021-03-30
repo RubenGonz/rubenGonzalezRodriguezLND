@@ -7,5 +7,9 @@ xsi:schemaLocation="http://www.misitio.com Ejercicio.xsd">
     <nombre>Ruben</nombre>
     <apellido>Gonzalez Rodriguez</apellido>
     <edad>20</edad>
+    <padres>
+        <madre>Hola</madre>
+        <padre>Hola</padre>
+    </padres>
     
 </Persona>

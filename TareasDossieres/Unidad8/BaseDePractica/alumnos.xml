@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?xml-stylesheet type="text/xsl" href="transformar04.xsl"?>
+<?xml-stylesheet type="text/xsl" href="transformar.xsl"?>
 <!-- New document created with EditiX at Mon Apr 04 17:43:56 BST 2011 -->
 
 <instituto codigo="38010700" nombre="IES Domingo Pérez Minik">
@@ -74,7 +74,6 @@
             <apellidos>Jiménez Pérez</apellidos>
             <repetidor>False</repetidor>
              <notas>
-             
                  <asignatura>Seguridad Informática</asignatura>
                  <nota>3</nota>
                  <asignatura>Planificación de redes</asignatura>
