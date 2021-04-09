@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?xml-stylesheet type="text/xsl" href="transformar.xsl"?>
-<!-- New document created with EditiX at Mon Apr 04 17:43:56 BST 2011 -->
+
+<?xml-stylesheet type="text/css" href="miestilo.css" ?>
 
 <instituto codigo="38010700" nombre="IES Domingo Pérez Minik">
     <curso codigo="1" nombre="1º ASIR">
