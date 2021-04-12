@@ -12,7 +12,7 @@
             <body>
                 <h1>LISTA DE ALUMNOS:</h1>
                 <ul>
-                    <xsl:apply-templates select="/instituto/curso"/>
+                    <xsl:apply-templates select="//alumno"/>
                 </ul>
             </body>
         </html>
@@ -28,6 +28,9 @@
             <br/>
         CIAL: 
             <xsl:value-of select="@cial"/>
+            <br/>
+        Nombre del curso: 
+            <xsl:value-of select="./ancestor::curso/@nombre"/>
             <hr noshade="noshade"/>
         </li>
     </xsl:template>
