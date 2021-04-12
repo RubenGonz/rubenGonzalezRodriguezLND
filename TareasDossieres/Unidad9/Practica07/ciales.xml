@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ciales>
+    <alumno>
+        <cial>A27M242</cial>
+        <datos>María -</datos>
+        <curso>1º ASIR</curso>
+    </alumno>
+    <alumno>
+        <cial>A90R112</cial>
+        <datos>Iván -</datos>
+        <curso>1º ASIR</curso>
+    </alumno>
+    <alumno>
+        <cial>A92R003</cial>
+        <datos>Luis Fernando -</datos>
+        <curso>2º ASIR</curso>
+    </alumno>
+</ciales>

@@ -30,7 +30,7 @@
             <xsl:value-of select="@cial"/>
             <br/>
         Nombre del curso: 
-            <xsl:value-of select="./ancestor::curso/@nombre"/>
+            <xsl:value-of select="../@nombre"/>
             <hr noshade="noshade"/>
         </li>
     </xsl:template>
