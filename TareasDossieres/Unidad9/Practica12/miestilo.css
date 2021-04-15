@@ -1,0 +1,24 @@
+table {
+    width: 25%;
+}
+
+th {
+    color: white;
+    background: blue;
+    text-align: left;
+}
+
+tr:nth-child(2)>td {
+    background: pink;
+    color: black;
+}
+
+td {
+    background: white;
+    border: solid black 1px;
+}
+
+td:nth-child(1) {
+    background: green;
+    color: white;
+}

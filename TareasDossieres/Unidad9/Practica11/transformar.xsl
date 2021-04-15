@@ -11,24 +11,52 @@
                 <link rel="stylesheet" href="miestilo.css"/>
             </head>
             <body>
-                <table>
-                    <th>Nombres y apellidos</th>
-                    <xsl:apply-templates select="//alumno"/>
-                </table>
-                <br/>
+                <h1>Lista de nombres y apellidos</h1>
+                <xsl:apply-templates select="//alumno"/>
+                <h1>Lista de ciales y curso</h1>
+                <xsl:apply-templates select="//alumno" mode="ciales"></xsl:apply-templates>
             </body>
         </html>
     </xsl:template>
 
     <xsl:template match="alumno">
-        <tr>
-            <td>
-                <xsl:value-of select="./nombre"/>
-            </td>
-            <td>
-                <xsl:value-of select="./apellidos"/>
-            </td>
-        </tr>
-
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+            </tr>
+            <tr>
+                <td>
+                    <xsl:value-of select="./nombre"/>
+                </td>
+                <td>
+                    <xsl:value-of select="./apellidos"/>
+                </td>
+            </tr>
+        </table>
+        <br/>
     </xsl:template>
+
+    <xsl:template match="alumno" mode="ciales">
+
+        <table>
+            <caption>
+                <xsl:number count="//alumno" level="any" format="1"></xsl:number>
+            </caption>
+            <tr>
+                <th>Cial</th>
+                <th>Curso</th>
+            </tr>
+            <tr>
+                <td>
+                    <xsl:value-of select="./@cial"></xsl:value-of>
+                </td>
+                <td>
+                    <xsl:value-of select="../@nombre"></xsl:value-of>
+                </td>
+            </tr>
+        </table>
+        <br/>
+    </xsl:template>
+
 </xsl:stylesheet> 
