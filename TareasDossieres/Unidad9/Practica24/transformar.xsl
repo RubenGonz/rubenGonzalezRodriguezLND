@@ -23,7 +23,9 @@
                         <td>Total de puntos</td>
                         <td>Nota media</td>
                     </tr>
-                    <xsl:apply-templates select="//alumno"/>
+                    <xsl:apply-templates select="//alumno">
+                        <xsl:sort select="./apellidos" data-type="text"/>
+                    </xsl:apply-templates>
                 </table>
             </body>
         </html>
@@ -47,7 +49,9 @@
                 <xsl:value-of select = "./apellidos"/>
             </td>
             <td>
-                <xsl:value-of select = "./repetidor"/>
+                <xsl:if test="./repetidor='True'">
+                    <xsl:text>Si</xsl:text>
+                </xsl:if>
             </td>
             <td>
                 <xsl:value-of select = "sum(.//nota)"/>
@@ -60,16 +64,38 @@
     </xsl:template>
 
     <xsl:template match="nota">
-    <tr>
-        <td colspan="5">
-            <xsl:number value="position()" format="a)"/>
-            <xsl:text> </xsl:text>
-            <xsl:value-of select = "./preceding-sibling::*[1]"/>
-        </td>
-        <td colspan="2">
-            <xsl:value-of select = "."/>
-        </td>
-    </tr>
+        <tr>
+            <td colspan="5">
+                <xsl:number value="position()" format="a)"/>
+                <xsl:text></xsl:text>
+                <xsl:value-of select = "./preceding-sibling::*[1]"/>
+            </td>
+            <td colspan="2">
+                <xsl:choose>
+                    <xsl:when test=". &lt; 5">
+                        <xsl:text>Suspenso</xsl:text>
+                    </xsl:when>
+                    <xsl:when test=". &lt; 6">
+                        <xsl:text>Suficiente</xsl:text>
+                    </xsl:when>
+                    <xsl:when test=". &lt; 7">
+                        <xsl:text>Bien</xsl:text>
+                    </xsl:when>
+                    <xsl:when test=". &lt; 9">
+                        <xsl:text>Notable</xsl:text>
+                    </xsl:when>
+                    <xsl:when test=". = 9">
+                        <xsl:text>Sobresaliente</xsl:text>
+                    </xsl:when>
+                    <xsl:when test=". &gt; 9">
+                        <xsl:text>Sobresaliente</xsl:text>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:value-of select = "."/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </td>
+        </tr>
     </xsl:template>
 
 </xsl:stylesheet> 
