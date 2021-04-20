@@ -11,9 +11,9 @@
 
     <xsl:template match="author">
         <xsl:element name="reportero">
-            Declarar variable nombreAutor
+            <xsl:variable name="nombreAutor" select="."></xsl:variable>
             <xsl:element name="nombre">
-                <xsl:value-of select="./author"/>
+                <xsl:value-of select="."/>
             </xsl:element>
             <xsl:apply-templates select="//item[./author=$nombreAutor]"/>
         </xsl:element>
