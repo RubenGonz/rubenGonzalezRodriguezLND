@@ -62,10 +62,10 @@
     </xsl:template>
 
     <xsl:template match="notas">
-        <td colsspan="5">
+        <td colspan="5">
             <xsl:text>Algo</xsl:text>
         </td>
-        <td colsspan="2">
+        <td colspan="2">
             <xsl:value-of select = "sum(.//nota) div count(.//nota)"/>
         </td>
     </xsl:template>
