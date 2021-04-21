@@ -40,7 +40,17 @@
                 <xsl:value-of select = ".//nota[1]"/>
             </td>
         </tr>
-        <xsl:apply-templates select=".//notas"/>
+        <xsl:apply-templates select=".//nota"/>
+    </xsl:template>
+
+    <xsl:template match="nota">
+        <tr>
+            <td>
+                <xsl:value-of select = "./preceding-sibling::*[1]"/>
+                <xsl:text>: </xsl:text>
+                <xsl:value-of select = "."/>
+            </td>
+        </tr>
     </xsl:template>
 
 </xsl:stylesheet> 

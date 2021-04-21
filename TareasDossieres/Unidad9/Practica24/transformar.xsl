@@ -33,7 +33,7 @@
 
     <xsl:template match="alumno">
         <tr>
-            <td rowspan="5" class="fondoAzul">
+            <td rowspan="{count(.//asignatura) +1}" class="fondoAzul">
                 <xsl:number value="position()" format="1"/>
             </td>
             <td>
