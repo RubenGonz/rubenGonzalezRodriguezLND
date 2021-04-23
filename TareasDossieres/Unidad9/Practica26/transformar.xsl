@@ -26,10 +26,10 @@
 
     <xsl:template match="alumno">
         <tr>
-            <td rowspan="4" class="fondoGris">
+            <td rowspan="{count(.//asignatura)}" class="fondoGris">
                 <xsl:number value="position()" format="1"/>
             </td>
-            <td rowspan="4">
+            <td rowspan="{count(.//asignatura)}">
                 <xsl:value-of select = "./nombre"/>
                 <xsl:text> </xsl:text>
                 <xsl:value-of select = "./apellidos"/>
