@@ -2,9 +2,9 @@
 <xsl:stylesheet version="1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:output method="html"/>
-
+    <xsl:variable name="Aprobado" select="5"/>
+    
     <xsl:template match="/">
-
         <html>
             <head>
                 <title>Alumnos</title>
@@ -36,7 +36,7 @@
             </td>
             <td>
                 <p>
-                    <xsl:apply-templates select=".//nota"/>
+                    <xsl:apply-templates select=".//nota[.&lt;$Aprobado]"/>
                 </p>
             </td>
         </tr>
