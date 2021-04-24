@@ -7,73 +7,77 @@
 
         <html>
             <head>
-                <title>Alumnos</title>
+                <title>Calendario de examenes</title>
                 <link rel="stylesheet" href="miestilo.css"/>
             </head>
             <body>
-                <h3>Lista de cursos ofertados:</h3>
-                <table>
-                    <tr>
-                        <td>Numero</td>
-                        <td>Curso</td>
-                        <td>Cial</td>
-                        <td>Nombre</td>
-                        <td>Apellidos</td>
-                        <td>Repetidor</td>
-                        <td>Total de puntos</td>
-                        <td>Nota media</td>
-                    </tr>
-                    <xsl:apply-templates select="//alumno">
-                        <xsl:sort select="sum(.//nota) div count(.//nota)" data-type="number"></xsl:sort>
-                    </xsl:apply-templates>
-                </table>
+                <h2>Calendario de examenes</h2>
+
+                <h3>Mayo</h3>
+
+                <xsl:for-each-group select="//examen[contains(text(),'Mayo')]/ancestor::idioma" group-by="@codigo">
+                    <table>
+                        <tr>
+                            <td colspan="4" class="encabezadosTabla">
+                                <xsl:value-of select="./@codigo"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="encabezadosTabla">Nivel</td>
+                            <td class="encabezadosTabla">Modalidad</td>
+                            <td class="encabezadosTabla">Lugar</td>
+                            <td class="encabezadosTabla">Fecha</td>
+                        </tr>
+                        <xsl:for-each select=".//examen[contains(text(),'Mayo')]">
+                            <tr>
+                                <td>
+                                    <xsl:value-of select="./ancestor::nivel/@certificacion"/>
+                                </td>
+                                <td>
+                                    <xsl:value-of select="./@tipo"/>
+                                </td>
+                                <td>
+                                    <xsl:value-of select="./ancestor::escuela/@sede"/>
+                                </td>
+                                <td><xsl:value-of select="."/></td>
+                            </tr>
+                        </xsl:for-each>
+                    </table>
+                </xsl:for-each-group>
+
+                <h3>Junio</h3>
+
+                <xsl:for-each-group select="//examen[contains(text(),'Junio')]/ancestor::idioma" group-by="@codigo">
+                    <table>
+                        <tr>
+                            <td colspan="4" class="encabezadosTabla">
+                                <xsl:value-of select="./@codigo"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="encabezadosTabla">Nivel</td>
+                            <td class="encabezadosTabla">Modalidad</td>
+                            <td class="encabezadosTabla">Lugar</td>
+                            <td class="encabezadosTabla">Fecha</td>
+                        </tr>
+                        <xsl:for-each select=".//examen[contains(text(),'Junio')]">
+                            <tr>
+                                <td>
+                                    <xsl:value-of select="./ancestor::nivel/@certificacion"/>
+                                </td>
+                                <td>
+                                    <xsl:value-of select="./@tipo"/>
+                                </td>
+                                <td>
+                                    <xsl:value-of select="./ancestor::escuela/@sede"/>
+                                </td>
+                                <td><xsl:value-of select="."/></td>
+                            </tr>
+                        </xsl:for-each>
+                    </table>
+                </xsl:for-each-group>
             </body>
         </html>
-    </xsl:template>
-
-    <xsl:template match="alumno">
-        <tr>
-            <td rowspan="{count(.//asignatura) +1}" class="fondoAzul">
-                <xsl:number value="position()" format="1"/>
-            </td>
-            <td>
-                <xsl:value-of select = "../@nombre"/>
-            </td>
-            <td>
-                <xsl:value-of select = "./@cial"/>
-            </td>
-            <td>
-                <xsl:value-of select = "./nombre"/>
-            </td>
-            <td>
-                <xsl:value-of select = "./apellidos"/>
-            </td>
-            <td>
-                <xsl:value-of select = "./repetidor"/>
-            </td>
-            <td>
-                <xsl:value-of select = "sum(.//nota)"/>
-            </td>
-            <td>
-                <xsl:value-of select = "sum(.//nota) div count(.//nota)"/>
-            </td>
-        </tr>
-        <xsl:apply-templates select=".//nota">
-            <xsl:sort select="." data-type="number"></xsl:sort>
-        </xsl:apply-templates>
-    </xsl:template>
-
-    <xsl:template match="nota">
-        <tr>
-            <td colspan="5">
-                <xsl:number value="position()" format="a)"/>
-                <xsl:text></xsl:text>
-                <xsl:value-of select = "./preceding-sibling::*[1]"/>
-            </td>
-            <td colspan="2">
-                <xsl:value-of select = "."/>
-            </td>
-        </tr>
     </xsl:template>
 
 </xsl:stylesheet> 

@@ -1,0 +1,25 @@
+h2 {
+    background-color: #2da02d;
+    color: black;
+}
+
+h3 {
+    background-color: lightblue;
+    color: black;
+}
+
+.encabezadosTabla {
+    background-color: #2da02d;
+    color: black;
+    text-align: center;
+}
+
+tr:nth-of-type(2n+1) {
+    background-color: lightgray;
+    color: black;
+}
+
+tr:nth-of-type(2n) {
+    background-color: lightgreen;
+    color: black;
+}
