@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New document created with EditiX at Sun May 29 20:50:42 BST 2011 -->
+
+<faltas>
+	<alumno cial="A18X111">
+		<falta tipo="I" hora="3" fecha="2011-05-20"/>
+		<falta tipo="I" hora="4" fecha="2011-05-20"/>
+		<falta tipo="I" hora="5" fecha="2011-05-20"/>
+		<falta tipo="I" hora="6" fecha="2011-05-20"/>
+		<falta tipo="J" hora="6" fecha="2011-03-15"/>
+	</alumno>
+	<alumno cial="A27M242">
+	               <falta tipo="J" hora="1" fecha="2011-02-03"/>
+		<falta tipo="J" hora="2" fecha="2011-05-08"/>
+		<falta tipo="I" hora="6" fecha="2011-05-20"/>
+	</alumno>
+	<alumno cial="A90R112">
+	               <falta tipo="I" hora="3" fecha="2010-11-22"/>
+		<falta tipo="I" hora="3" fecha="2010-12-18"/>
+		<falta tipo="I" hora="6" fecha="2010-11-08"/>
+	</alumno>
+	<alumno cial="A92T861">
+	               <falta tipo="I" hora="1" fecha="2011-02-03"/>
+		<falta tipo="J" hora="2" fecha="2011-04-08"/>
+		<falta tipo="I" hora="4" fecha="2011-04-20"/>
+	</alumno>
+	<alumno cial="A95M600">
+	               <falta tipo="J" hora="1" fecha="2011-05-01"/>
+		<falta tipo="J" hora="2" fecha="2011-05-01"/>
+		<falta tipo="J" hora="3" fecha="2011-05-01"/>
+		<falta tipo="J" hora="4" fecha="2011-05-01"/>
+		<falta tipo="J" hora="5" fecha="2011-05-01"/>
+		<falta tipo="J" hora="6" fecha="2011-05-01"/>
+		<falta tipo="J" hora="1" fecha="2011-03-02"/>
+		<falta tipo="J" hora="2" fecha="2011-03-02"/>
+		<falta tipo="J" hora="3" fecha="2011-03-02"/>
+		<falta tipo="J" hora="4" fecha="2011-03-02"/>
+		<falta tipo="J" hora="5" fecha="2011-03-02"/>
+		<falta tipo="J" hora="6" fecha="2011-03-02"/>
+	</alumno>
+		<alumno cial="A92R590">
+	               <falta tipo="I" hora="1" fecha="2011-03-02"/>
+		<falta tipo="I" hora="1" fecha="2011-02-05"/>
+		<falta tipo="I" hora="1" fecha="2011-05-02"/>
+		<falta tipo="I" hora="6" fecha="2011-03-02"/>
+		<falta tipo="I" hora="6" fecha="2011-05-02"/>
+		<falta tipo="I" hora="6" fecha="2011-05-03"/>
+		<falta tipo="J" hora="1" fecha="2010-11-18"/>
+		<falta tipo="J" hora="2" fecha="2010-11-18"/>
+		<falta tipo="J" hora="3" fecha="2011-02-18"/>
+		<falta tipo="J" hora="4" fecha="2011-02-18"/>
+		<falta tipo="J" hora="5" fecha="2011-02-18"/>
+		<falta tipo="J" hora="6" fecha="2011-02-18"/>
+	</alumno>
+</faltas>

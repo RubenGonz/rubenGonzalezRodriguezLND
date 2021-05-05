@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alumnos>
+   <alumno cial="A92R590">
+            <nombre>Miguel</nombre>
+            <apellidos>Rodríguez</apellidos>
+            <repetidor>False</repetidor>
+            <notas>
+                <asignatura>Programación</asignatura>
+                <nota>4</nota>
+                <asignatura>Multimedia</asignatura>
+                <nota>3</nota>
+            </notas>
+        </alumno>
+</alumnos>
