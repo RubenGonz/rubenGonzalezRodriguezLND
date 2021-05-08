@@ -13,8 +13,7 @@ xquery version "1.0";
     {
         for $curso in //curso
         let $nombre := $curso/@nombre
-        let $alumno := $curso/alumno
-        where every $alumno in $curso satisfies ($alumno//asignatura = "Lenguajes de marcas") 
+        where every $alumno in $curso/alumno satisfies $alumno//asignatura = "Lenguajes de marcas"
         return <tr>
             <td>{string($nombre)}</td>
         </tr>

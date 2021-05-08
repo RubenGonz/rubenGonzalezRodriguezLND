@@ -14,10 +14,10 @@ xquery version "1.0";
     {
         for $alumno in //alumno
         let $nombre := $alumno/nombre
-        let $conadorAprobadas := count($alumno//nota[. >= "5"])
-        where $conadorAprobadas >= 3
+        let $contadorAprobadas := count($alumno//nota[. >= 5])
+        where $contadorAprobadas >= 3
         order by $alumno/nombre
-        return <tr><td>{string($nombre)}</td><td>{string($conadorAprobadas)} materias</td></tr>
+        return <tr><td>{string($nombre)}</td><td>{string($contadorAprobadas)} materias</td></tr>
     }
     </table>
 </body>

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?xml-stylesheet type="text/" href="transformar.xsl"?>
+
+<?xml-stylesheet type="text/css" href="miestilo.css" ?>
+
 <instituto codigo="38010700" nombre="IES Domingo Pérez Minik">
     <curso codigo="1" nombre="1º ASIR">
         <alumno cial="A18X111">
