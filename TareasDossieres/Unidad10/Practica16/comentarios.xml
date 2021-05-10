@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- New document created with EditiX at Sun May 29 20:50:42 BST 2011 -->
+
+<comentarios>
+
+	<alumno cial="A18X111">
+		<comentario fecha="2011-05-20">
+		      El alumno no entrega práctica de Lenguajes
+		 </comentario>
+		<comentario fecha="2011-05-20">
+		      El alumno no entrega práctica de Sistemas Operativos
+		 </comentario>
+	</alumno>
+	<alumno cial="A27M242">
+		<comentario fecha="2011-05-20">
+		      El alumno realiza presentación PowerPoint para Lenguajes
+		 </comentario>
+		<comentario fecha="2010-11-22">
+		      Se presenta a recuperación de Sistemas Operativos
+		 </comentario>
+	</alumno>
+	<alumno cial="A90R112">
+		<comentario fecha="2011-04-08">
+		      Entregado supuesto práctico de subnetting
+		 </comentario>
+		<comentario fecha="2010-11-22">
+		      Voluntario para ejercicio en pizarra de Gestión de Procesos
+		 </comentario>
+	</alumno>
+	<alumno cial="A92T861">
+              		<comentario fecha="2011-05-20">
+		      Participa en clase de forma muy positiva
+		 </comentario>
+		<comentario fecha="2010-11-22">
+		      Se presenta a recuperación de Sistemas Operativos
+		 </comentario>
+ 		<comentario fecha="2011-04-08">
+		      No entrega supuesto práctico de subnetting
+		 </comentario>
+		<comentario fecha="2011-04-08">
+		      No sube a la plataforma presupuesto para un CPD
+		 </comentario>
+	</alumno>
+	<alumno cial="A95M600">
+              		<comentario fecha="2011-05-20">
+		      Resuelve dudas de sus compañeros en el foro
+		 </comentario>
+		<comentario fecha="2010-11-22">
+		      Solicita al departamento fotocopias del libro Redes de Tanembaun
+		 </comentario>
+ 		<comentario fecha="2011-04-08">
+		      Entrega supuesto práctico de subnetting
+		 </comentario>
+		<comentario fecha="2011-04-08">
+		      Entrega presupuesto para un CPD en papel
+		 </comentario>
+	</alumno>
+		<alumno cial="A92R590">
+              		<comentario fecha="2011-04-08">
+		      No entrega supuesto práctico de subnetting
+		 </comentario>
+		<comentario fecha="2011-04-08">
+		      No sube a la plataforma presupuesto para un CPD
+		 </comentario>
+	</alumno>
+</comentarios>
