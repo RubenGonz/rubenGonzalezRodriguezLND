@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+   <head>
+      <title>Lista</title>
+   </head>
+   <body>
+      <h3>Html que usa los tres archivos</h3>
+      <h3>JavierMárquez Fernández</h3>
+      <table>
+         <tr>
+            <td class="encabezado">Cial</td>
+            <td class="encabezado">Curso</td>
+         </tr>
+         <tr>
+            <td>A18X111</td>
+            <td>1º ASIR</td>
+         </tr>
+         <tr>
+            <td class="encabezado">Asignatura</td>
+            <td class="encabezado">Nota</td>
+         </tr>
+         <tr>
+            <td>Lenguajes de marcas</td>
+            <td>8</td>
+         </tr>
+         <tr>
+            <td>Redes</td>
+            <td>7</td>
+         </tr>
+         <tr>
+            <td>Fundamentos de hardware</td>
+            <td>3</td>
+         </tr>
+         <tr>
+            <td>Sistemas Operativos</td>
+            <td>6</td>
+         </tr>
+         <tr>
+            <td class="encabezado">F.Justificadas</td>
+            <td class="encabezado">F.Injustificadas</td>
+         </tr>
+         <tr>
+            <td>1</td>
+            <td>4</td>
+         </tr>
+      </table>
+      <h3>MaríaÁlvarez Pérez</h3>
+      <table>
+         <tr>
+            <td class="encabezado">Cial</td>
+            <td class="encabezado">Curso</td>
+         </tr>
+         <tr>
+            <td>A27M242</td>
+            <td>1º ASIR</td>
+         </tr>
+         <tr>
+            <td class="encabezado">Asignatura</td>
+            <td class="encabezado">Nota</td>
+         </tr>
+         <tr>
+            <td>Lenguajes de marcas</td>
+            <td>5</td>
+         </tr>
+         <tr>
+            <td>Redes</td>
+            <td>5</td>
+         </tr>
+         <tr>
+            <td>Fundamentos de hardware</td>
+            <td>7</td>
+         </tr>
+         <tr>
+            <td>Sistemas Operativos</td>
+            <td>6</td>
+         </tr>
+         <tr>
+            <td class="encabezado">F.Justificadas</td>
+            <td class="encabezado">F.Injustificadas</td>
+         </tr>
+         <tr>
+            <td>2</td>
+            <td>1</td>
+         </tr>
+      </table>
+      <h3>IvánRodríguez Pérez</h3>
+      <table>
+         <tr>
+            <td class="encabezado">Cial</td>
+            <td class="encabezado">Curso</td>
+         </tr>
+         <tr>
+            <td>A90R112</td>
+            <td>1º ASIR</td>
+         </tr>
+         <tr>
+            <td class="encabezado">Asignatura</td>
+            <td class="encabezado">Nota</td>
+         </tr>
+         <tr>
+            <td>Lenguajes de marcas</td>
+            <td>4</td>
+         </tr>
+         <tr>
+            <td>Redes</td>
+            <td>9</td>
+         </tr>
+         <tr>
+            <td>Fundamentos de hardware</td>
+            <td>9</td>
+         </tr>
+         <tr>
+            <td>Sistemas Operativos</td>
+            <td>3</td>
+         </tr>
+         <tr>
+            <td class="encabezado">F.Justificadas</td>
+            <td class="encabezado">F.Injustificadas</td>
+         </tr>
+         <tr>
+            <td>0</td>
+            <td>3</td>
+         </tr>
+      </table>
+      <h3>MarcosDomínguez</h3>
+      <table>
+         <tr>
+            <td class="encabezado">Cial</td>
+            <td class="encabezado">Curso</td>
+         </tr>
+         <tr>
+            <td>A92T861</td>
+            <td>2º ASIR</td>
+         </tr>
+         <tr>
+            <td class="encabezado">Asignatura</td>
+            <td class="encabezado">Nota</td>
+         </tr>
+         <tr>
+            <td>Seguridad Informática</td>
+            <td>5</td>
+         </tr>
+         <tr>
+            <td>Planificación de redes</td>
+            <td>8</td>
+         </tr>
+         <tr>
+            <td>Servicios web</td>
+            <td>7</td>
+         </tr>
+         <tr>
+            <td>Prácticas de empresa</td>
+            <td>5</td>
+         </tr>
+         <tr>
+            <td class="encabezado">F.Justificadas</td>
+            <td class="encabezado">F.Injustificadas</td>
+         </tr>
+         <tr>
+            <td>1</td>
+            <td>2</td>
+         </tr>
+      </table>
+      <h3>Luis FernandoJiménez Pérez</h3>
+      <table>
+         <tr>
+            <td class="encabezado">Cial</td>
+            <td class="encabezado">Curso</td>
+         </tr>
+         <tr>
+            <td>A92R003</td>
+            <td>2º ASIR</td>
+         </tr>
+         <tr>
+            <td class="encabezado">Asignatura</td>
+            <td class="encabezado">Nota</td>
+         </tr>
+         <tr>
+            <td>Seguridad Informática</td>
+            <td>3</td>
+         </tr>
+         <tr>
+            <td>Planificación de redes</td>
+            <td>4</td>
+         </tr>
+         <tr>
+            <td>Servicios web</td>
+            <td>4</td>
+         </tr>
+         <tr>
+            <td>Prácticas de empresa</td>
+            <td>0</td>
+         </tr>
+      </table>
+      <h3>ElenaRamírez</h3>
+      <table>
+         <tr>
+            <td class="encabezado">Cial</td>
+            <td class="encabezado">Curso</td>
+         </tr>
+         <tr>
+            <td>A87R122</td>
+            <td>2º ASIR</td>
+         </tr>
+         <tr>
+            <td class="encabezado">Asignatura</td>
+            <td class="encabezado">Nota</td>
+         </tr>
+         <tr>
+            <td>Seguridad Informática</td>
+            <td>6</td>
+         </tr>
+         <tr>
+            <td>Planificación de redes</td>
+            <td>10</td>
+         </tr>
+         <tr>
+            <td>Servicios web</td>
+            <td>8</td>
+         </tr>
+         <tr>
+            <td>Prácticas de empresa</td>
+            <td>5</td>
+         </tr>
+      </table>
+      <h3>IrinaLugo Lugo</h3>
+      <table>
+         <tr>
+            <td class="encabezado">Cial</td>
+            <td class="encabezado">Curso</td>
+         </tr>
+         <tr>
+            <td>A95M600</td>
+            <td>1º DAI</td>
+         </tr>
+         <tr>
+            <td class="encabezado">Asignatura</td>
+            <td class="encabezado">Nota</td>
+         </tr>
+         <tr>
+            <td>Programación</td>
+            <td>8</td>
+         </tr>
+         <tr>
+            <td>Análisis</td>
+            <td>7</td>
+         </tr>
+         <tr>
+            <td>Medios</td>
+            <td>3</td>
+         </tr>
+         <tr>
+            <td>Multimedia</td>
+            <td>6</td>
+         </tr>
+         <tr>
+            <td class="encabezado">F.Justificadas</td>
+            <td class="encabezado">F.Injustificadas</td>
+         </tr>
+         <tr>
+            <td>12</td>
+            <td>0</td>
+         </tr>
+      </table>
+      <h3>GenaroHernández Hernández</h3>
+      <table>
+         <tr>
+            <td class="encabezado">Cial</td>
+            <td class="encabezado">Curso</td>
+         </tr>
+         <tr>
+            <td>A92R543</td>
+            <td>1º DAI</td>
+         </tr>
+         <tr>
+            <td class="encabezado">Asignatura</td>
+            <td class="encabezado">Nota</td>
+         </tr>
+         <tr>
+            <td>Programación</td>
+            <td>5</td>
+         </tr>
+         <tr>
+            <td>Análisis</td>
+            <td>5</td>
+         </tr>
+         <tr>
+            <td>Medios</td>
+            <td>7</td>
+         </tr>
+         <tr>
+            <td>Multimedia</td>
+            <td>6</td>
+         </tr>
+      </table>
+      <h3>MiguelRodríguez</h3>
+      <table>
+         <tr>
+            <td class="encabezado">Cial</td>
+            <td class="encabezado">Curso</td>
+         </tr>
+         <tr>
+            <td>A92R590</td>
+            <td>1º DAI</td>
+         </tr>
+         <tr>
+            <td class="encabezado">Asignatura</td>
+            <td class="encabezado">Nota</td>
+         </tr>
+         <tr>
+            <td>Programación</td>
+            <td>4</td>
+         </tr>
+         <tr>
+            <td>Multimedia</td>
+            <td>3</td>
+         </tr>
+         <tr>
+            <td class="encabezado">F.Justificadas</td>
+            <td class="encabezado">F.Injustificadas</td>
+         </tr>
+         <tr>
+            <td>6</td>
+            <td>6</td>
+         </tr>
+      </table>
+   </body>
+</html>

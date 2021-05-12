@@ -1,0 +1,8 @@
+table {
+    border: 2px solid gray;
+}
+
+.encabezado {
+    background-color: gray;
+    font-weight: bold;
+}
