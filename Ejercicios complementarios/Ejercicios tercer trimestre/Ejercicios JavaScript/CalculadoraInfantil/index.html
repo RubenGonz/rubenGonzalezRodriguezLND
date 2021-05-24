@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruben González Rodríguez</title>
+    <style>
+        .divPrincipal {
+            margin: auto;
+            background-color: #F7F2EB;
+            max-width: 50vw;
+        }
+
+        .divNum1, .divNum2{
+            background-color: #F3E8D9;
+        }
+
+        .divOperador{
+            background-color: #D1D0D0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="divPrincipal">
+        <h2>Operar 2 números</h2>
+        <form name="MandarNumeros">
+        <div class="divNum1">
+            <label for="num1">Número 1</label>
+            <input type="number" id="num1"/>
+        </div>
+        <div class="divNum2">
+            <label for="num2">Número 2</label>
+            <input type="number" id="num2"/>
+        </div>
+        <div class="divOperador">
+            <label for="operador">Introducir la operación a realizar (+,-,*,/)</label>
+            <input type="text" id="operador"/>
+            <button id="calcular" onclick="calcular()">Calcular</button>
+        </div>
+        <div>
+            <span id="solucion">El resultado aparecerá aquí</span>
+        </div>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
