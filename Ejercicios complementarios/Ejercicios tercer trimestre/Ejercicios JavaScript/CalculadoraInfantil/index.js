@@ -13,24 +13,23 @@ function calcular(){
 
     switch (operador) {
         case "+":
-            let respuestaSuma = Number(num1) + Number(num2)
-            DOM.solucion.innerHTML = respuestaSuma
+            let respuesta = Number(num1) + Number(num2)
+            DOM.solucion.innerHTML = respuesta
             break;
 
         case "-":
-            let respuestaResta = Number(num1) - Number(num2)
-            DOM.solucion.innerHTML = respuestaResta
-            alert(resResta)
+            let respuesta = Number(num1) - Number(num2)
+            DOM.solucion.innerHTML = respuesta
             break;
 
         case "*":
-            let respuestaMultiplicacion = Number(num1) * Number(num2)
-            DOM.solucion.innerHTML = respuestaMultiplicacion
+            let respuesta = Number(num1) * Number(num2)
+            DOM.solucion.innerHTML = respuesta
             break;
 
         case "/":
-            let respuestaDivision = Number(num1) / Number(num2)
-            DOM.solucion.innerHTML = respuestaDivision
+            let respuesta = Number(num1) / Number(num2)
+            DOM.solucion.innerHTML = respuesta
             break;
             
         default:
