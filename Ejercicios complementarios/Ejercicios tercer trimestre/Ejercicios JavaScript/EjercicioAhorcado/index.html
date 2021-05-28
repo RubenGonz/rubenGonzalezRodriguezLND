@@ -6,13 +6,126 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juego del ahorcado</title>
+
+    <style>
+        .divPrincipal {
+            margin: auto;
+            background-color: #F0F8FF;
+            max-width: 50vw;
+        }
+
+        canvas {
+            margin: auto;
+            background-color: #ECEFF1;
+        }
+
+    </style>
 </head>
 
-<body style="background-color: grey;">
-    <canvas id="canvas" width="500" height="350">
+<body>
+    <div class="divPrincipal">
+        <canvas id="canvas" width="500" height="350">
+        </canvas>
+    
+        <div>
+            <button id="dibujar" onclick="dibujar()">Dibujar</button>
+        </div>
+    </div>
 
-    </canvas>
+    <script>
+
+        const DOM = {
+            canvas: document.getElementById("canvas"),
+            boton: document.getElementById("dibujar")
+        }
+
+        let partesCuerpo = 7;
+        let contadorAhorcado = partesCuerpo;
+        dibujar();
+
+        function dibujar() {
+            let ctx = DOM.canvas.getContext('2d');
+
+            /**
+             * Forma principal
+             */
+            ctx.beginPath();
+            ctx.strokeStyle = "black";
+            ctx.lineWidth = 6;
+
+            //Base
+            ctx.moveTo(125, 250);
+            ctx.lineTo(225, 250);
+
+            //Columna
+            ctx.moveTo(175, 250);
+            ctx.lineTo(175, 100);
+
+            //Viga
+            ctx.moveTo(175, 100);
+            ctx.lineTo(265, 100);
+
+            ctx.stroke();
+
+            /**
+             * Cuerda
+             */
+            ctx.beginPath();
+            ctx.strokeStyle = "red";
+            ctx.lineWidth = 6;
+
+            ctx.moveTo(265, 100);
+            ctx.lineTo(265, 125);
+
+            ctx.stroke();
+
+            /**
+             * Soporte
+             */
+            ctx.beginPath();
+            ctx.strokeStyle = "black";
+            ctx.lineWidth = 5;
+
+            ctx.moveTo(220, 100);
+            ctx.lineTo(175, 125);
+
+            ctx.stroke();
+
+            /**
+             * Persona
+             */
+            ctx.beginPath();
+            ctx.strokeStyle = "blue";
+            ctx.lineWidth = 5;
+
+            //Cabeza
+            ctx.ellipse(265, 137.5, 8, 12.25, 0, 0, 2 * Math.PI);
+
+            //Tronco
+            ctx.moveTo(265, 150);
+            ctx.lineTo(265, 200);
+
+            //Brazo derecho
+            ctx.moveTo(265, 150);
+            ctx.lineTo(280, 175);
+
+            //Brazo izquierdo
+            ctx.moveTo(265, 150);
+            ctx.lineTo(250, 175);
+
+            //Pierna derecha
+            ctx.moveTo(265, 200);
+            ctx.lineTo(280, 225);
+
+            //Pierna izquierda
+            ctx.moveTo(265, 200);
+            ctx.lineTo(250, 225);
+
+            ctx.stroke();
+
+        }
+
+    </script>
 </body>
-<script src="index.js"></script>
 
 </html>
