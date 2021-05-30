@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruben González Rodríguez</title>
+    <style>
+        .divPrincipal {
+            margin: auto;
+            background-color: #F7F2EB;
+            max-width: 40vw;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .divNumeros {
+            display: grid;
+            margin: auto;
+            background-color: #F7F2EB;
+            max-width: 50%;
+            grid-template:
+            "num1 num2 num3" 60px
+            "num4 num5 num6" 60px
+            "num7 num8 num9" 60px
+            "num0 num0 num0" 60px
+            / 1fr 1fr 1fr;
+            grid-gap: 5px; 
+        }
+
+        button:nth-of-type(1) {
+            grid-area: num1;
+        }
+
+        button:nth-of-type(2) {
+            grid-area: num2;
+        }
+
+        button:nth-of-type(3) {
+            grid-area: num3;
+        }
+
+        button:nth-of-type(4) {
+            grid-area: num4;
+        }
+
+        button:nth-of-type(5) {
+            grid-area: num5;
+        }
+
+        button:nth-of-type(6) {
+            grid-area: num6;
+        }
+
+        button:nth-of-type(7) {
+            grid-area: num7;
+        }
+
+        button:nth-of-type(8) {
+            grid-area: num8;
+        }
+
+        button:nth-of-type(9) {
+            grid-area: num9;
+        }
+
+        button:nth-of-type(10) {
+            grid-area: num0;
+        }
+
+        .divTextArea {
+            margin: auto;
+            margin-top: 10px;
+            width: 30%;
+            grid-area: textArea;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="divPrincipal">
+
+        <h2>Descubrir número</h2>
+
+        <div class="divNumeros">
+            <button id="calcular">1</button>
+            <button id="calcular">2</button>
+            <button id="calcular">3</button>
+            <button id="calcular">4</button>
+            <button id="calcular">5</button>
+            <button id="calcular">6</button>
+            <button id="calcular">7</button>
+            <button id="calcular">8</button>
+            <button id="calcular">9</button>
+            <button id="calcular">0</button>
+        </div>
+
+        <div class="divTextArea">
+            <textarea id="textarea" cols="30" rows="10">
+            </textarea>
+        </div>
+
+    </div>
+
+    <script>
+
+        const DOM = {
+            num1: document.getElementById("num1"),
+            num2: document.getElementById("num2"),
+            operador: document.getElementById("operador"),
+            solucion: document.getElementById("solucion")
+        }
+
+        function calcular() {
+
+            let num1 = DOM.num1.value
+            let num2 = DOM.num2.value
+            let operador = DOM.operador.value
+
+            let respuesta;
+
+            switch (operador) {
+                case "+":
+                    respuesta = Number(num1) + Number(num2)
+                    break;
+
+                case "-":
+                    respuesta = Number(num1) - Number(num2)
+                    break;
+
+                case "*":
+                    respuesta = Number(num1) * Number(num2)
+                    break;
+
+                case "/":
+                    respuesta = Number(num1) / Number(num2)
+                    break;
+
+                default:
+                    respuesta = "No introdujo un operador válido"
+                    break;
+            }
+
+            DOM.solucion.innerHTML = respuesta;
+
+        }
+
+    </script>
+</body>
+
+</html>
