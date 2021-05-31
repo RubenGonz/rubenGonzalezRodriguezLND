@@ -1,0 +1,81 @@
+.divPrincipal {
+    margin: auto;
+    background-color: #CCD9E5;
+    max-width: 40vw;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.divNumeros {
+    display: grid;
+    margin: auto;
+    background-color: #879C9F;
+    max-width: 60%;
+    grid-template:
+    "num1 num2 num3" 60px
+    "num4 num5 num6" 60px
+    "num7 num8 num9" 60px
+    "num0 num0 num0" 60px
+    / 1fr 1fr 1fr;
+    border: 5px #636E6F outset;
+}
+
+button {
+    margin: 4px;
+    font-size: 2rem;
+    color: #4C515B;
+}
+
+button:nth-of-type(1) {
+    grid-area: num1;
+}
+
+button:nth-of-type(2) {
+    grid-area: num2;
+}
+
+button:nth-of-type(3) {
+    grid-area: num3;
+}
+
+button:nth-of-type(4) {
+    grid-area: num4;
+}
+
+button:nth-of-type(5) {
+    grid-area: num5;
+}
+
+button:nth-of-type(6) {
+    grid-area: num6;
+}
+
+button:nth-of-type(7) {
+    grid-area: num7;
+}
+
+button:nth-of-type(8) {
+    grid-area: num8;
+}
+
+button:nth-of-type(9) {
+    grid-area: num9;
+}
+
+button:nth-of-type(10) {
+    grid-area: num0;
+}
+
+.divTextArea {
+    margin-left: auto;
+    margin-top: 10px;
+    width: 30%;
+    grid-area: textArea;
+}
+
+textarea {
+    margin: auto;
+}
