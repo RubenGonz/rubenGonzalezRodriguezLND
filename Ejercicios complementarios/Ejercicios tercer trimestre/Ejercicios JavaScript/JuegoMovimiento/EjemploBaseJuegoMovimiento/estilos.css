@@ -1,0 +1,28 @@
+:root{
+    --size-objetoEscenario: 20px;
+}
+
+.objetoEscenario{
+    position: absolute;
+    width: var(--size-objetoEscenario);
+    height: var(--size-objetoEscenario);
+    border-radius: 100%;
+}
+
+#escenario{
+    position: relative;
+    width: 900px;
+    background: lightblue;
+    height: 400px;
+}
+
+#jugador{
+
+    background: blue;
+
+}
+
+.enemigo{
+
+    background: yellow;
+}
