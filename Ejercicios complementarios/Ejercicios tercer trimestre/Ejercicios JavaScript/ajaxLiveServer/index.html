@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Ajax</h2>
+
+<div id="demo">
+
+</div>
+
+<script>
+timerActualizarMensajes = setInterval(function(){enviar();},5000); 
+
+function enviar(){
+    
+    let divdemo = document.getElementById("demo");
+    let xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        let txt = "";
+        if (this.readyState == 4 && this.status == 200) {
+            let fechaActual = new Date();
+            let h = fechaActual.getHours();
+            let m = fechaActual.getMinutes();
+            let s = fechaActual.getSeconds();
+
+            let horaActual =  h + ":" + m + ":" + s;
+
+            // this.responseText  es lo que nos ha devuelto el servidor
+            let textoRespuesta = this.responseText;
+
+            //Si estuviéramos recibiendo información en formato JSON
+            //es muy sencillo convertirlo en datos usables en javascript
+            //mediante: JSON.parse()    Veamos ejemplo:
+            //let mensajesJSON = JSON.parse(textoRespuesta);
+
+            let mensajes = "" +horaActual + "-- " + textoRespuesta + "<br>";
+            
+            
+            demo.innerHTML += mensajes;
+      
+            
+        }
+    }
+    xmlhttp.open("GET", "http://localhost:5500/index.html", true);
+   
+    xmlhttp.send();     
+}    
+
+</script>
+
+</body>
+</html>
