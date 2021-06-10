@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  display: grid;
+  grid-template: 
+  "Header Header  Header" auto
+  ".      Main    ."      auto
+  "Footer Footer  Footer" auto
+  / 25%   1fr     25%;
+}
+
+header {
+  margin: 0;
+  grid-area: Header;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+
+  background-image: url(./Imagenes/FondoPokeballs); 
+  background-repeat: repeat;
+}
+
+.login, .registro {
+  margin: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.login, .registro {
+  padding: 10px;
+}
+
+.logo {
+  background-color: white;
+  box-shadow: 50px -10px 10px 0px white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.logo img {
+  height: 5rem;
+}
+
+main {
+  grid-area: Main;
+}
+
+footer {
+  grid-area: Footer;
+}
+

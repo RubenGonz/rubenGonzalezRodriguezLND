@@ -189,6 +189,21 @@
 
             ctx.stroke();
 
+            function apostar(letra) {
+                mensaje = "";
+                if(patida.isJugable){
+                    if (intento(letra) != null) {
+                        mensaje = "Has acertado el intento"
+                    } else {
+                        errores = errores ++;
+                        partida.dibujar;
+                        mensaje = "Has fallado el intento"
+                    }
+                } else {
+                    partida.reiniciar();
+                    partida.apostar(letra);
+                }
+            }
         }
 
     </script>
